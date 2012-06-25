@@ -1,0 +1,69 @@
+/* Variables.less
+ * Variables to customize the look and feel of Bootstrap
+ * ----------------------------------------------------- */
+
+
+// Links
+@linkColor:         rgba(190, 0, 0, .9);
+@colorLink: @linkColor;
+@linkColorHover:    darken(@linkColor, 15);
+
+// Grays
+@black:             rgba(0, 5, 0, .8);
+@grayDark:          lighten(@black, 25%);
+@gray:              lighten(@black, 50%);
+@grayLight:         lighten(@black, 75%);
+@grayLighter:       lighten(@black, 90%);
+@white:             #fff;
+
+// Accent Colors
+@blue:              rgba(43, 115, 225, .95);
+@blueDark:          darken(@blue, 15%);
+@green:             rgba(99, 160, 33, .95);
+@greenDark:			darken(@green, 15%);
+@red:				rgba(203, 46, 45, .95);
+@redDark:			darken(@red, 15%);
+@yellow:            rgba(227, 209, 65, .95);
+@orange:            rgba(32, 100, 100, .95);
+@pink:              rgba(231, 127, 204, .95);
+@purple:            rgba(120, 80, 200, .95);
+
+// Baseline grid
+@basefont:          13px;
+@em:				@basefont * 1em;
+@baseline:          @basefont * 1.81 * @em;
+
+// Griditude
+// Modify the grid styles in mixins.less
+@gridColumns:       16;
+@gridColumnWidth:   40px;
+@gridGutterWidth:   20px;
+@extraSpace:        (@gridGutterWidth * 2); // For our grid calculations
+@siteWidth:         (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+// Color Scheme
+// Use this to roll your own color schemes if you like (unused by Bootstrap by default)
+@baseColor:         @red;                   // Set a base color
+@complement:        spin(@baseColor, 180);  // Determine a complementary color
+@split1:            spin(@baseColor, 158);  // Split complements
+@split2:            spin(@baseColor, -158);
+@triad1:            spin(@baseColor, 135);  // Triads colors
+@triad2:            spin(@baseColor, -135);
+@tetra1:            spin(@baseColor, 90);   // Tetra colors
+@tetra2:            spin(@baseColor, -90);
+@analog1:           spin(@baseColor, 22);   // Analogs colors
+@analog2:           spin(@baseColor, -22);
+
+@iconFontFamily:        "IconicStrokeRegular";
+@iconFileName:          "fonts/iconic_stroke";
+@iconColor:             @grayDark;
+@alternativeIconColor:  @white;
+@iconBasefont:          @em;
+@iconBaseline:          @baseline;
+
+// More variables coming soon:
+// - @basefont to @baseFontSize
+// - @baseline to @baseLineHeight
+// - @baseFontFamily
+// - @primaryButtonColor
+// - anything else? File an issue on GitHub
