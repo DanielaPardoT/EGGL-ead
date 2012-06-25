@@ -7,14 +7,14 @@
 // ---------
 
 p {
-  #font > .shorthand(normal,@basefont,@baseline);
-  margin-bottom: @baseline / 2;
+  #font > .shorthand(normal, @basefont, @baseline);
+  margin-bottom: @em / 2;
+  
   small {
-    font-size: @basefont - 2;
+    font-size: @em;
     color: @grayLight;
   }
 }
-
 
 // HEADINGS
 // --------
@@ -137,10 +137,12 @@ blockquote {
   margin-bottom: @baseline;
   border-left: 5px solid #eee;
   padding-left: 15px;
+  
   p {
     #font > .shorthand(300,14px,@baseline);
     margin-bottom: 0;
   }
+  
   small {
     display: block;
     #font > .shorthand(300,12px,@baseline);
@@ -160,16 +162,15 @@ address {
 
 // Inline and block code styles
 code, pre {
-  padding: 0 3px 2px;
+  padding: @em/7 @em/5;
   font-family: Monaco, Andale Mono, Courier New, monospace;
   font-size: 12px;
-  .border-radius(3px);
+  .border-radius(@em/5);
 }
 code {
-  background-color: lighten(@orange, 40%);
-  color: rgba(0,0,0,.75);
-  padding: 1px 3px;
+  background-color: lighten(@yellow, 30%);
 }
+
 pre {
   background-color: #f5f5f5;
   display: block;

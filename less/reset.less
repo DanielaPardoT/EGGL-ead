@@ -165,11 +165,11 @@ box-sizing: border-box;
 
 textarea {overflow: auto;}
 ::selection {
-	background: @colorLink;
+	background: lighten(@linkColor, 50%);
 	color: colorBackground;
 }
 ::-moz-selection {
-	background: @colorLink;
+	background: lighten(@linkColor, 50%);
 	color: colorBackground;
 }
 
@@ -181,5 +181,5 @@ img::-moz-selection {
 }
 
 body {
-	-webkit-tap-highlight-color: @colorLink;
+	-webkit-tap-highlight-color: lighten(@linkColor, 50%);
 }
