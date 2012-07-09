@@ -6,7 +6,7 @@
 // Links
 @linkColor:         rgba(190, 0, 0, .9);
 @colorLink:			@linkColor;
-@linkColorHover:    darken(@linkColor, 15);
+@linkColorHover:    darken(@linkColor, 15%);
 
 // Grays
 @black:             rgba(0, 0, 0, 1);
@@ -32,10 +32,11 @@
 @basefontsize:		14px;
 @basefont:          @basefontsize * 1em;
 @em:				@basefont;
-@baseline:          @basefont * 1.81;
+@baseline:          @em * 1.81;
 
 // Griditude
 // Modify the grid styles in mixins.less
+
 @gridColumns:		16;
 @gridColumnWidth:	40px;
 @gridGutterWidth:	20px;
