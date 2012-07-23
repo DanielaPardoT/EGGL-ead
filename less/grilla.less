@@ -1,0 +1,54 @@
+/*
+
+GRILLA
+
+*/
+
+
+.contenedor{
+	width: @anchoTotal;
+	margin: 0 auto;
+	background-color: fade(@blanco, 85%);
+	padding: @interColumna;
+}
+
+.fila{
+	margin: 0 -@interColumna 0 -@interColumna;
+	.clearfix;
+}
+
+[class*="col"] {
+      float: left;
+      margin-left: @interColumna;
+      &.ver{
+	      color: fade(@negro, 30%);
+			background-color: fade(@negro, 5%);
+			.border-radius(3px);
+			margin-bottom: @interColumna;
+			p{
+				font-size: 11px;
+				font-weight: bold;
+				padding: @interColumna/2;
+			}
+      }
+}
+
+
+
+
+.col1{width: @1cols;}
+.col2{width: @2cols;}
+.col3{width: @3cols;}
+.col4{width: @4cols;}
+.col5{width: @5cols;}
+.col6{width: @6cols;}
+.col7{width: @7cols;}
+.col8{width: @8cols;}
+.col9{width: @9cols;}
+.col10{width: @10cols;}
+.col11{width: @11cols;}
+.col12{width: @12cols;}
+.col13{width: @13cols;}
+.col14{width: @14cols;}
+.col15{width: @15cols;}
+.col16{width: @16cols;}

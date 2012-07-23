@@ -1,77 +1,77 @@
-/* Typography.less
- * Headings, body text, lists, code, and more for a versatile and durable typography system
- * ---------------------------------------------------------------------------------------- */
 
-
-// BODY TEXT
+// Cuerpo de Texto
 // ---------
 
+* {
+	font-family: @tipografia;
+}
+
+body{
+	background-color: @grisClaro;
+}
+
+a{
+	color: @colorLink;
+	text-decoration: none;
+	&:hover{
+		background-color: @ahuesado;
+		text-decoration: underline;
+	}
+	&:visited{
+		color: @colorLink;
+		text-decoration: line-through;
+	}
+}
+
 p {
-  #font > .shorthand(normal, @basefont, @baseline);
-  margin-bottom: @em / 2;
-  
+  margin-bottom: @interlinea;
+  line-height: @interlinea;
+  &.fino{
+	  font-weight: lighter;
+  }
+  &.grande{
+	  color: @gris;
+	  font-size: 1.5em;
+	  margin: 0;
+	  padding: 0;
+  }
   small {
     font-size: @em;
-    color: @grayLight;
+    color: @grisClaro;
   }
 }
 
-// HEADINGS
+// Cabeceras
 // --------
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  color: @grayDark;
-  small {
-    color: @grayLight;
-  }
-}
-h1 {
-  margin-bottom: @baseline;
-  font-size: 30px;
-  line-height: @baseline * 2;
-  small {
-    font-size: 18px;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: @baseline * 2;
-  small {
-    font-size: 14px;
-  }
-}
-h3, h4, h5, h6 {
-  line-height: @baseline * 2;
-}
-h3 {
-  font-size: 18px;
-  small {
-    font-size: 14px;
-  }
-}
-h4 {
-  font-size: 16px;
-  small {
-    font-size: 12px;
-  }
-}
-h5 {
-  font-size: 14px;
-}
-h6 {
-  font-size: 13px;
-  color: @grayLight;
-  text-transform: uppercase;
+
+	font-weight: bold;
+	color: @grisOscuro;
+	line-height: @interlinea;
+	margin: @interlinea 0;
+	
+	&.grande{
+		font-size: 1.5em;
+		color: @colorLink;
+	}
+	&.gigante{
+		font-size: 3em;
+		color: @colorLink;
+		margin: 0;
+	}
 }
 
+h1 {font-size: 32px;}
+h2 {font-size: 28px;}
+h3 {font-size: 22px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 14px;}
 
-// COLORS
-// ------
-
-// Unordered and Ordered lists
+// Listas
 ul, ol {
-  margin: 0 0 @baseline 25px;
+  margin: 0 0 @interlinea 25px;
 }
 ul ul,
 ul ol,
@@ -86,8 +86,8 @@ ol {
   list-style: decimal;
 }
 li {
-  line-height: @baseline;
-  color: @gray;
+  line-height: @interlinea;
+  color: @gris;
 }
 ul.unstyled {
   list-style: none;
@@ -96,29 +96,28 @@ ul.unstyled {
 
 // Description Lists
 dl {
-  margin-bottom: @baseline;
-  dt, dd {
-    line-height: @baseline;
-  }
-  dt {
-    font-weight: bold;
-  }
-  dd {
-    margin-left: @baseline / 2;
-  }
+	margin-bottom: @interlinea;
+	dt, dd {
+		line-height: @interlinea;
+		}
+	dt {
+		font-weight: bold;
+		}
+	dd {
+		margin-left: @interlinea / 2;
+		}
 }
 
-// MISC
-// ----
+// Otros
 
-// Horizontal rules
+// Regla horizontal
 hr {
   margin: 20px 0 19px;
   border: 0;
   border-bottom: 1px solid #eee;
 }
 
-// Emphasis
+// Émfasis
 strong {
   font-style: inherit;
   font-weight: bold;
@@ -129,54 +128,49 @@ em {
   line-height: inherit;
 }
 .muted {
-  color: @grayLight;
+  color: @grisClaro;
 }
 
 // Blockquotes
 blockquote {
-  margin-bottom: @baseline;
+  margin-bottom: @interlinea;
   border-left: 5px solid #eee;
   padding-left: 15px;
   
-  p {
-    #font > .shorthand(300,14px,@baseline);
-    margin-bottom: 0;
-  }
   
   small {
     display: block;
-    #font > .shorthand(300,12px,@baseline);
-    color: @grayLight;
+    color: @grisClaro;
     &:before {
       content: '\2014 \00A0';
     }
   }
 }
 
-// Addresses
+// Dirección
 address {
   display: block;
-  line-height: @baseline;
-  margin-bottom: @baseline;
+  line-height: @interlinea;
+  margin-bottom: @interlinea;
 }
 
-// Inline and block code styles
+// código
 code, pre {
   padding: @em/7 @em/5;
   font-family: Monaco, Andale Mono, Courier New, monospace;
   font-size: 12px;
-  .border-radius(@em/5);
+  .border-radius(1ex);
 }
 code {
-  background-color: lighten(@yellow, 30%);
+  background-color: @ahuesado;
 }
 
 pre {
   background-color: #f5f5f5;
   display: block;
-  padding: (@baseline - 1) / 2;
-  margin: 0 0 @baseline;
-  line-height: @baseline;
+  padding: (@interlinea - 1) / 2;
+  margin: 0 0 @interlinea;
+  line-height: @interlinea;
   font-size: 12px;
   border: 1px solid #ccc;
   border: 1px solid rgba(0,0,0,.15);
@@ -188,7 +182,7 @@ pre {
 }
 
 .global{
-	width: @siteWidth;
+	width: @anchoTotal;
 	-moz-column-count: 3;
 	-moz-column-gap: 20px;
 	-webkit-column-count: 3;
@@ -198,19 +192,18 @@ pre {
 }
 
 .big{
-	#font > .shorthand(lighter, @basefont * 2, @baseline);
-	color: @grayLight;
+	color: @grisClaro;
 	margin: -@em 0 0 0;
 	
 }
 .main{
 	color: @linkColor;
-	font-size: @basefont * 3;
+	font-size: @font-size * 3;
 }
-.toc{
+.tdc{
 	padding: @em @em*2;
-	color: darken(@yellow, 30%);
-	background-color: lighten(@yellow, 30%);
+	color: @gris;
+	background-color: @ahuesado;
 	.border-radius(1em / 5);
 	margin: 1em 0;
 }

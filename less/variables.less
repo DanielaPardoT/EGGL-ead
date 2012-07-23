@@ -1,71 +1,69 @@
 /* Variables.less
- * Variables to customize the look and feel of Bootstrap
+ * Variables to customize the look and feel
  * ----------------------------------------------------- */
 
+@fontfamily1:		"Helvetica Neue", Helvetica, Arial, sans-serif;
+@fontfamily2:		Georgia, serif;
+@tipografia:		@fontfamily1;
+
+
+// Grises
+@negro:				rgba(0, 0, 0, 1);
+@grisOscuro:		lighten(@negro, 25%);
+@gris:				lighten(@negro, 50%);
+@grisClaro:			lighten(@negro, 75%);
+@blanco:			rgba(255, 255, 255, 1);
+
+// Colores
+@azul:				rgba(43, 115, 225, .95);
+@azulOscuro:		darken(@azul, 15%);
+@verde:				rgba(99, 160, 33, .95);
+@verdeOscuro:		darken(@verde, 15%);
+@ahuesado:			rgba(239, 242, 219, 1);
+@rojo:				rgba(200, 0, 0, 1);
 
 // Links
-@linkColor:         rgba(200, 0, 0, 1);
+@linkColor:         @rojo;
 @colorLink:			@linkColor;
 @linkColorHover:    darken(@linkColor, 15%);
 
-// Grays
-@black:             rgba(0, 0, 0, 1);
-@grayDark:          lighten(@black, 25%);
-@gray:              lighten(@black, 50%);
-@grayLight:         lighten(@black, 75%);
-@grayLighter:       lighten(@black, 90%);
-@white:             #fff;
+// Proporciones tipográficas
+@font-size:			14px;				// tamaño base en pixeles
+@em: 				@font-size * 1em;		// atajo para salida en ems, ej. "12/@em"
+@interlinea:        @em * 1.81;
 
-// Accent Colors
-@blue:              rgba(43, 115, 225, .95);
-@blueDark:          darken(@blue, 15%);
-@green:             rgba(99, 160, 33, .95);
-@greenDark:			darken(@green, 15%);
-@red:				rgba(203, 46, 45, .95);
-@redDark:			darken(@red, 15%);
-@yellow:            rgba(247, 217, 62, 1);
-@orange:            rgba(224, 117, 0, 1);
-@pink:              rgba(231, 127, 204, .95);
-@purple:            rgba(120, 80, 200, .95);
 
-// Baseline grid
-@basefontsize:		16px;
-@basefont:          @basefontsize * 1em;
-@em:				@basefont;
-@baseline:          @em * 1.81;
+// Grilla
+@columnas:			16;
+@columna: 			70px;
+@interColumna: 		10px;
+@anchoTotal:		(@columnas * (@columna + @interColumna) - @interColumna);
 
-// Griditude
-// Modify the grid styles in mixins.less
+// Column-widths in variables, in ems
+//
 
-@gridColumns:		16;
-@gridColumnWidth:	32 * @em;
-@gridGutterWidth:	2 * @em;
-@extraSpace:		(@gridGutterWidth * 2); // For our grid calculations
-@siteWidth:			(@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+ @1cols: ( 1 * (@columna + @interColumna) - @interColumna); @1col: @1cols;
+ @2cols: ( 2 * (@columna + @interColumna) - @interColumna);
+ @3cols: ( 3 * (@columna + @interColumna) - @interColumna);
+ @4cols: ( 4 * (@columna + @interColumna) - @interColumna);
+ @5cols: ( 5 * (@columna + @interColumna) - @interColumna);
+ @6cols: ( 6 * (@columna + @interColumna) - @interColumna);
+ @7cols: ( 7 * (@columna + @interColumna) - @interColumna);
+ @8cols: ( 8 * (@columna + @interColumna) - @interColumna);
+ @9cols: ( 9 * (@columna + @interColumna) - @interColumna);
+@10cols: (10 * (@columna + @interColumna) - @interColumna);
+@11cols: (11 * (@columna + @interColumna) - @interColumna);
+@12cols: (12 * (@columna + @interColumna) - @interColumna);
+@13cols: (13 * (@columna + @interColumna) - @interColumna);
+@14cols: (14 * (@columna + @interColumna) - @interColumna);
+@15cols: (15 * (@columna + @interColumna) - @interColumna);
+@16cols: (16 * (@columna + @interColumna) - @interColumna);
 
-// Color Scheme
-// Use this to roll your own color schemes if you like (unused by Bootstrap by default)
-@baseColor:			@grayDark;				// Set a base color
-@complement:		spin(@baseColor, 180);	// Determine a complementary color
-@split1:			spin(@baseColor, 158);	// Split complements
-@split2:			spin(@baseColor, -158);
-@triad1:			spin(@baseColor, 135);	// Triads colors
-@triad2:			spin(@baseColor, -135);
-@tetra1:			spin(@baseColor, 90);	// Tetra colors
-@tetra2:			spin(@baseColor, -90);
-@analog1:			spin(@baseColor, 22);	// Analogs colors
-@analog2:			spin(@baseColor, -22);
 
-@iconFontFamily:        "IconicStrokeRegular";
-@iconFileName:          "fonts/iconic_stroke";
-@iconColor:             @baseColor;
-@alternativeIconColor:  @white;
-@iconBasefont:          @em;
-@iconBaseline:          @baseline;
+//
+// Column-widths in a function, in ems
+//
 
-// More variables coming soon:
-// - @basefont to @baseFontSize
-// - @baseline to @baseLineHeight
-// - @baseFontFamily
-// - @primaryButtonColor
-// - anything else? File an issue on GitHub
+.width (@cols:1) {
+	width: (@cols * (@columna + @interColumna) - @interColumna) / @em;
+}
