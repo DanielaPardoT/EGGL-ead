@@ -4,7 +4,7 @@
 
 
 // Links
-@linkColor:         rgba(190, 0, 0, .9);
+@linkColor:         rgba(200, 0, 0, 1);
 @colorLink:			@linkColor;
 @linkColorHover:    darken(@linkColor, 15%);
 
@@ -29,7 +29,7 @@
 @purple:            rgba(120, 80, 200, .95);
 
 // Baseline grid
-@basefontsize:		14px;
+@basefontsize:		16px;
 @basefont:          @basefontsize * 1em;
 @em:				@basefont;
 @baseline:          @em * 1.81;
@@ -38,8 +38,8 @@
 // Modify the grid styles in mixins.less
 
 @gridColumns:		16;
-@gridColumnWidth:	40px;
-@gridGutterWidth:	20px;
+@gridColumnWidth:	32 * @em;
+@gridGutterWidth:	2 * @em;
 @extraSpace:		(@gridGutterWidth * 2); // For our grid calculations
 @siteWidth:			(@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
 

@@ -19,30 +19,3 @@ e[ad] EGGL Framework
 @import "tables.less";
 @import "patterns.less";
 
-.global{
-	width: @siteWidth;
-	-moz-column-count: 3;
-	-moz-column-gap: 20px;
-	-webkit-column-count: 3;
-	-webkit-column-gap: 20px;
-	column-count: 3;
-	column-gap: 20px;
-}
-
-.big{
-	#font > .shorthand(lighter, @basefont * 2, @baseline);
-	color: @grayLight;
-	margin: -@em 0 0 0;
-	
-}
-.main{
-	color: @linkColor;
-	font-size: @basefont * 3;
-}
-.toc{
-	padding: @em @em*2;
-	color: darken(@yellow, 30%);
-	background-color: lighten(@yellow, 30%);
-	.border-radius(1em / 5);
-	margin: 1em 0;
-}
