@@ -1,8 +1,13 @@
 /*
 
 Funciones
+// taken from twitterbootstrap @github
+mayorly
 
 */
+
+
+
 // Border Radius
 .border-radius(@radius) {
   -webkit-border-radius: @radius;
@@ -25,6 +30,8 @@ Funciones
        -o-transition: @transition;
           transition: @transition;
 }
+
+// parte extraña que se usa: #gradient > .vertical(lighten(@grisClaro, 40%), lighten(@grisClaro, 10%) ); por ejemplo...
 
 #gradient {
   .horizontal(@startColor: #555, @endColor: #333) {
@@ -88,6 +95,8 @@ Funciones
     background-image: linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
   }
 }
+
+
 
 .clearfix {
   *zoom: 1;

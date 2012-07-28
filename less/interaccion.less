@@ -8,7 +8,33 @@
 */
 
 
-.btn{
+.btn,
+a.btn {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 3px 10px 5px 10px;
+  color: fade(@grisOscuro, 80%);
+  text-align: center;
+  text-shadow: 0 1px 1px fade(@blanco, 80%);
+  vertical-align: middle;
+  #gradient > .vertical-three-colors(@blanco, @grisClaro, 80%, lighten(@gris, 20%));
+  border: 1px solid fade(@negro, 10%);
+  .border-radius(@cuerpo/4);
+  cursor: pointer;
+  .box-shadow(inset fade(@negro, 10%) 0 0 @cuerpo/2);
+  
+  &.grande{
+	  font-size: @cuerpo*1.5;
+	  padding: @cuerpo/2 @cuerpo;
+	  border: 3px solid fade(@negro, 20%);
+  }
+}
 
 
+.btn:hover {
+  color: @grisOscuro;
+  //background-position: -10px 0;
+  text-decoration: none;
+  background-color: darken(@blanco, 10%);
+  .transition(ease-in);
 }

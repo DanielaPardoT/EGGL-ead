@@ -4,42 +4,54 @@ Vers‡til
 
 */
 
+// Resoluciones (ancho en pixeles)
 
-@tam1: 319;
-@tam2: 320;
-@tam3: 479;
-@tam4: 480;
-@tam5: 1199;
-@tam6: 1200;
-@tam7: 1400;
+@tam1:		480px;
+@tam1m:		@tam1 - 1;
+
+@tam2:		1250px;
+@tam2m:		@tam2 - 1;
+
+@tam3:		1800px;
+@tam3m:		@tam3 - 1;
 
 
 
-@media (min-width: 0) and (max-width: @tam1) {
-	.continente, .fila{width: 100%;}
+@media (min-width: 0) and (max-width: @tam1m) {
+	 div.continente {width: 100%;}
 }
 
-@media (min-width: @tam1) and (max-width: @tam2) {
-	.continente, .fila{width: @tam1;}
+@media (min-width: @tam1) and (max-width: @tam2m) {
+
+	div.continente {width: 16 * (@columna + @interColumna) - @interColumna;}
+	
+	@bloque: (16 * (@columna + @interColumna) + @interColumna) / 16;
+	 .bloque1{width: @bloque - 0.00001;}
+	 .bloque2{width: @bloque * 2;}
+	 .bloque3{width: @bloque * 3;}
+	 .bloque4{width: @bloque * 4;}
+	 .bloque5{width: @bloque * 5;}
+	 .bloque6{width: @bloque * 6;}
+	 .bloque7{width: @bloque * 7;}
+	 .bloque8{width: @bloque * 8;}
+	 .bloque9{width: @bloque * 9;}
+	.bloque10{width: @bloque * 10;}
+	.bloque11{width: @bloque * 11;}
+	.bloque12{width: @bloque * 12;}
+	.bloque13{width: @bloque * 13;}
+	.bloque14{width: @bloque * 14;}
+	.bloque15{width: @bloque * 15;}
+	.bloque16{width: @bloque * 16;}
+	.bloque17{width: @bloque * 17;}
+	.bloque18{width: @bloque * 18;}
+	.bloque19{width: @bloque * 19;}
+	.bloque20{width: @bloque * 20;}
+	.bloque21{width: @bloque * 21;}
+	.bloque22{width: @bloque * 22;}
+	.bloque23{width: @bloque * 23;}
+	.bloque24{width: @bloque * 24;}
 }
 
-@media (min-width: @tam2) and (max-width: @tam3) {
-	.continente, .fila{width: @tam2;}	
+@media (min-width: @tam2) and (max-width: @tam3m) {
+	 div.continente {width: @anchoTotal;}	
 }
-
-@media (min-width: @tam3) and (max-width: @tam4) {
-	.continente, .fila{width: @tam3;}	
-}
-
-@media (min-width: @tam4) and (max-width: @tam5) {
-	.continente, .fila{width: @tam4;}	
-}
-
-@media (min-width: @tam5) and (max-width: @tam6) {
-	.continente, .fila{width: @tam5;}	
-}
-
-@media (min-width: @tam6) and (max-width: @tam7) {
-	.continente, .fila{width: @tam6;}	
-}
-
