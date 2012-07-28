@@ -28,19 +28,19 @@
 @linkColorHover:    darken(@linkColor, 15%);
 
 // Proporciones tipográficas
-@font-size:			14px;				// tamaño base en pixeles
+@font-size:			16px;					// tamaño base en pixeles
+@cuerpo:			@font-size;
 @em: 				@font-size * 1em;		// atajo para salida en ems, ej. "12/@em"
 @interlinea:        @em * 1.81;
 
 
 // Grilla
-@columnas:			16;
-@columna: 			70px;
+@columnas:			24;
+@columna: 			40px;
 @interColumna: 		10px;
 @anchoTotal:		(@columnas * (@columna + @interColumna) - @interColumna);
 
-// Column-widths in variables, in ems
-//
+// Anchos de columna
 
  @1cols: ( 1 * (@columna + @interColumna) - @interColumna); @1col: @1cols;
  @2cols: ( 2 * (@columna + @interColumna) - @interColumna);
@@ -58,12 +58,16 @@
 @14cols: (14 * (@columna + @interColumna) - @interColumna);
 @15cols: (15 * (@columna + @interColumna) - @interColumna);
 @16cols: (16 * (@columna + @interColumna) - @interColumna);
+@17cols: (17 * (@columna + @interColumna) - @interColumna);
+@18cols: (18 * (@columna + @interColumna) - @interColumna);
+@19cols: (19 * (@columna + @interColumna) - @interColumna);
+@20cols: (20 * (@columna + @interColumna) - @interColumna);
+@21cols: (21 * (@columna + @interColumna) - @interColumna);
+@22cols: (22 * (@columna + @interColumna) - @interColumna);
+@23cols: (23 * (@columna + @interColumna) - @interColumna);
+@24cols: (24 * (@columna + @interColumna) - @interColumna);
 
+// Ancho del bloque
 
-//
-// Column-widths in a function, in ems
-//
+@bloque:	(@anchoTotal + 2*@interColumna)/@columnas;
 
-.width (@cols:1) {
-	width: (@cols * (@columna + @interColumna) - @interColumna) / @em;
-}

@@ -26,13 +26,14 @@ a{
 p {
   margin-bottom: @interlinea;
   line-height: @interlinea;
+  color: fade(@negro, 60%);
   &.fino{
 	  font-weight: lighter;
   }
   &.grande{
 	  color: @gris;
 	  font-size: 1.5em;
-	  margin: 0;
+	  margin: 1em 0;
 	  padding: 0;
   }
   small {
@@ -48,17 +49,18 @@ h1, h2, h3, h4, h5, h6 {
 
 	font-weight: bold;
 	color: @grisOscuro;
-	line-height: @interlinea;
 	margin: @interlinea 0;
+	vertical-align: bottom;
 	
 	&.grande{
 		font-size: 1.5em;
 		color: @colorLink;
 	}
 	&.gigante{
-		font-size: 3em;
+		font-size: 5em;
+		line-height: 85%;
 		color: @colorLink;
-		margin: 0;
+		font-weight: lighter;
 	}
 }
 
@@ -156,13 +158,17 @@ address {
 
 // código
 code, pre {
-  padding: @em/7 @em/5;
   font-family: Monaco, Andale Mono, Courier New, monospace;
-  font-size: 12px;
+  font-size: @font-size *.666;
   .border-radius(1ex);
+  color: fade(@negro, 50%);
 }
+
 code {
-  background-color: @ahuesado;
+	display: block;
+	line-height: @interlinea * .666;
+	white-space: pre;
+	background-color: @ahuesado;
 }
 
 pre {

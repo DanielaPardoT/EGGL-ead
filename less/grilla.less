@@ -5,7 +5,7 @@ GRILLA
 */
 
 
-.contenedor{
+.continente{
 	width: @anchoTotal;
 	margin: 0 auto;
 	background-color: fade(@blanco, 85%);
@@ -13,18 +13,63 @@ GRILLA
 }
 
 .fila{
-	margin: 0 -@interColumna 0 -@interColumna;
+	margin-left: -@interColumna;
+	margin-right: -@interColumna;
 	.clearfix;
 }
+
+.margen-superior{margin-top: @interColumna;}
+.margen-inferior{margin-bottom: @interColumna;}
 
 [class*="col"] {
       float: left;
       margin-left: @interColumna;
       &.ver{
 	      color: fade(@negro, 30%);
-			background-color: fade(@negro, 5%);
-			.border-radius(3px);
-			margin-bottom: @interColumna;
+	      background-color: fade(@negro, 5%);
+	      .border-radius(3px);
+	      	p{
+		      	font-size: 11px;
+		      	font-weight: bold;
+				padding: @interColumna/2;
+			}
+      }
+}
+
+
+.a1, .col1{width: @1cols;}
+.a2, .col2{width: @2cols;}
+.a3, .col3{width: @3cols;}
+.a4, .col4{width: @4cols;}
+.a5, .col5{width: @5cols;}
+.a6, .col6{width: @6cols;}
+.a7, .col7{width: @7cols;}
+.a8, .col8{width: @8cols;}
+.a9, .col9{width: @9cols;}
+.a10, .col10{width: @10cols;}
+.a11, .col11{width: @11cols;}
+.a12, .col12{width: @12cols;}
+.a13, .col13{width: @13cols;}
+.a14, .col14{width: @14cols;}
+.a15, .col15{width: @15cols;}
+.a16, .col16{width: @16cols;}
+.a17, .col17{width: @17cols;}
+.a18, .col18{width: @18cols;}
+.a19, .col19{width: @19cols;}
+.a20, .col20{width: @20cols;}
+.a21, .col21{width: @21cols;}
+.a22, .col22{width: @22cols;}
+.a23, .col23{width: @23cols;}
+.a24, .col24{width: @24cols;}
+
+
+[class*="bloque"] {
+      float: left;
+      margin: 0;
+      &.ver{
+      	color: fade(@negro, 30%);
+		background-color: fade(@negro, 5%);
+		box-shadow: inset 0 0 3px fade(@negro, 15%);
 			p{
 				font-size: 11px;
 				font-weight: bold;
@@ -33,22 +78,27 @@ GRILLA
       }
 }
 
-
-
-
-.col1{width: @1cols;}
-.col2{width: @2cols;}
-.col3{width: @3cols;}
-.col4{width: @4cols;}
-.col5{width: @5cols;}
-.col6{width: @6cols;}
-.col7{width: @7cols;}
-.col8{width: @8cols;}
-.col9{width: @9cols;}
-.col10{width: @10cols;}
-.col11{width: @11cols;}
-.col12{width: @12cols;}
-.col13{width: @13cols;}
-.col14{width: @14cols;}
-.col15{width: @15cols;}
-.col16{width: @16cols;}
+ .bloque1{width: @bloque;}
+ .bloque2{width: @bloque * 2;}
+ .bloque3{width: @bloque * 3;}
+ .bloque4{width: @bloque * 4;}
+ .bloque5{width: @bloque * 5;}
+ .bloque6{width: @bloque * 6;}
+ .bloque7{width: @bloque * 7;}
+ .bloque8{width: @bloque * 8;}
+ .bloque9{width: @bloque * 9;}
+.bloque10{width: @bloque * 10;}
+.bloque11{width: @bloque * 11;}
+.bloque12{width: @bloque * 12;}
+.bloque13{width: @bloque * 13;}
+.bloque14{width: @bloque * 14;}
+.bloque15{width: @bloque * 15;}
+.bloque16{width: @bloque * 16;}
+.bloque17{width: @bloque * 17;}
+.bloque18{width: @bloque * 18;}
+.bloque19{width: @bloque * 19;}
+.bloque20{width: @bloque * 20;}
+.bloque21{width: @bloque * 21;}
+.bloque22{width: @bloque * 22;}
+.bloque23{width: @bloque * 23;}
+.bloque24{width: @bloque * 24;}
