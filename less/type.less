@@ -31,7 +31,7 @@ p {
   line-height: @interlinea;
   color: fade(@negro, 60%);
   &.fino{
-	  font-weight: lighter;
+	  font-weight: 100;
   }
   &.grande{
 	  color: @gris;
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	font-weight: bold;
 	color: @grisOscuro;
-	margin: @interlinea 0;
+	margin: 0 0 @interlinea 0;
 	vertical-align: bottom;
 	
 	&.grande{
@@ -64,13 +64,16 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 5em;
 		line-height: 85%;
 		color: @colorLink;
-		font-weight: lighter;
+		font-weight: 100;
 	}
 	&.especial{
-		padding: 20px;
-		margin: 0;
-		#gradient > .vertical(@blanco, @ahuesado);
+		color: @linkColor;
+		font-weight: 100;
+		font-size: 2em;
 		text-transform: uppercase;
+	}
+	&.filete{
+		border-bottom: 1px solid @borde;
 	}
 }
 

@@ -10,31 +10,34 @@
 
 .btn,
 a.btn {
-  display: inline-block;
-  white-space: nowrap;
-  padding: 3px 10px 5px 10px;
-  color: fade(@grisOscuro, 80%);
-  text-align: center;
-  text-shadow: 0 1px 1px fade(@blanco, 80%);
-  vertical-align: middle;
-  #gradient > .vertical-three-colors(@blanco, @grisClaro, 80%, lighten(@gris, 20%));
-  border: 1px solid fade(@negro, 10%);
-  .border-radius(@cuerpo/4);
-  cursor: pointer;
-  .box-shadow(inset fade(@negro, 10%) 0 0 @cuerpo/2);
+	display: inline-block;
+	cursor: pointer;
+	white-space: nowrap;
+	
+	padding: 3px 10px 5px 10px;
+	color: fade(@grisOscuro, 50%);
+	text-align: center;
+	
+	text-shadow: 1px 1px 0 fade(@blanco, 80%), -1px -1px 0 fade(@negro, 9%);
+	
+	vertical-align: middle;
+	#gradient > .vertical-three-colors(lighten(@grisClaro, 22%), lighten(@grisClaro, 14%), 80%, lighten(@grisClaro, 8%));
+	border: 1px solid @borde;
+
+
+	.border-radius(3px);
+	.box-shadow(inset fade(@blanco, 80%) 1px 1px 1px);
   
-  &.grande{
-	  font-size: @cuerpo*1.5;
-	  padding: @cuerpo/2 @cuerpo;
-	  border: 3px solid fade(@negro, 20%);
-  }
+	&.grande{
+		font-size: @cuerpo;
+		padding: @cuerpo/2 @cuerpo;
+		}
 }
 
 
 .btn:hover {
-  color: @grisOscuro;
-  //background-position: -10px 0;
-  text-decoration: none;
-  background-color: darken(@blanco, 10%);
-  .transition(ease-in);
+	.transition(.5s ease all);
+	text-decoration: none;
+	#gradient > .vertical-three-colors(lighten(@grisClaro, 20%), lighten(@grisClaro, 10%), 50%, lighten(@grisClaro, 5%));
+	.box-shadow(inset fade(@negro, 20%) 0 0 4px);
 }

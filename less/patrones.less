@@ -1,0 +1,43 @@
+/*
+
+
+ Patrones
+
+
+*/
+
+.pizarra{
+	background-color: @pizarra;
+	color: fade(@blanco, 80%);
+	* {
+		color: fade(@blanco, 80%);
+		font-weight: 100;
+	}
+	
+	a{
+		color: @colorOpuesto;
+	}
+	a:hover{
+		background-color: fade(@colorOpuesto, 10%);
+	}
+
+}
+
+nav{
+	
+	ul{
+	margin: 0;
+	padding: 0;
+		
+		li{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: inline;
+			a{
+				display: inline-block;	
+				padding: @cuerpo 2*@cuerpo;
+			}
+		}	
+	}
+}

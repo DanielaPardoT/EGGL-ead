@@ -20,13 +20,18 @@
 @azulOscuro:		darken(@azul, 15%);
 @verde:				rgba(99, 160, 33, .95);
 @verdeOscuro:		darken(@verde, 15%);
-@ahuesado:			rgba(239, 242, 219, 1);
 @rojo:				rgba(200, 0, 0, 1);
+
+// Especiales
+@pizarra:			rgba(50, 60, 70, 1);
+@ahuesado:			rgba(239, 242, 219, 1);
+@borde:				fade(@grisClaro, 30%);
 
 // Links
 @linkColor:         @rojo;
 @colorLink:			@linkColor;
 @linkColorHover:    darken(@linkColor, 15%);
+@colorOpuesto:		spin(@linkColor, 180);
 
 // Proporciones tipográficas
 @font-size:			16px;					// tamaño base en pixeles
@@ -37,8 +42,8 @@
 
 // Grilla
 @columnas:			24;
-@columna: 			40px;
-@interColumna: 		10px;
+@columna: 			2 * @cuerpo;
+@interColumna: 		1 * @cuerpo;
 @anchoTotal:		(@columnas * (@columna + @interColumna) - @interColumna);
 
 // Anchos de columna
@@ -70,5 +75,5 @@
 
 // Ancho del bloque
 
-@bloque:	(@anchoTotal + 2*@interColumna)/@columnas;
+@bloque:	(@anchoTotal + 2 * @interColumna) / @columnas;
 
