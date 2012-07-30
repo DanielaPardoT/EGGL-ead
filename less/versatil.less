@@ -19,10 +19,30 @@ Vers‡til
 
 @media (min-width: 0) and (max-width: @tam1m) {
 	 div.pag {width: 100%;}
+	 .mitad{width: 100%;}
 }
 
 @media (min-width: @tam1) and (max-width: @tam2m) {
 	div.pag {width: 16 * (@columna + @interColumna) - @interColumna;}
+	
+	.total{
+		.col-16;
+	}
+	
+	.mitad{
+		.col-8;
+	}
+	.tercio{
+		.col-5;
+	}
+	.cuarto{
+		.col-3;
+	}
+	
+	p{
+		font-size: 14px;
+		line-height: 180%;
+	}
 }
 
 @media (min-width: @tam2) and (max-width: @tam3m) {

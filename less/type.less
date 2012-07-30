@@ -6,6 +6,26 @@
 	font-family: @tipografia;
 }
 
+.grande{
+	font-size: 250%;
+}
+.gigante{
+	font-size: 500%;
+}
+.chico, .chica{
+	font-size: 80%;
+}
+.color{
+	color: @linkColor;
+}
+.uc{
+	text-transform: uppercase;
+}
+.fina, .fino{
+	font-weight: 100;
+}
+	
+	
 body{
 	#gradient > .striped(lighten(@grisClaro, 15%), -45deg);
 	background-size: 10px 10px;
@@ -29,19 +49,22 @@ p {
   margin-bottom: @interlinea;
   line-height: @interlinea;
   color: fade(@negro, 60%);
-  &.fino{
-	  font-weight: 100;
-  }
+  text-align: justify;
+
   &.grande{
+  		font-size: @cuerpo * 1.5;
 	  color: @gris;
-	  font-size: 1.5em;
-	  margin: 1em 0;
+	  line-height: 100%;
 	  padding: 0;
   }
   &.chico {
     font-size: @cuerpo*.80;
-    line-height: @interlinea*1.2;
+    line-height: @interlinea * .6;
     color: fade(@negro, 45%);
+  }
+  &.poema{
+	  white-space: pre;
+	  color: fade(@negro, 80%);
   }
 }
 
@@ -55,24 +78,11 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 @interlinea 0;
 	vertical-align: bottom;
 	
-	&.grande{
-		font-size: 1.5em;
-		color: @colorLink;
-	}
-	&.gigante{
-		font-size: 5em;
-		line-height: 85%;
-		color: @colorLink;
-		font-weight: 100;
-	}
-	&.especial{
-		color: @linkColor;
-		font-weight: 100;
-		font-size: 2em;
-		text-transform: uppercase;
-	}
 	&.filete{
+		margin: 0 -@interColumna;
+		padding: 0 @interColumna;
 		border-bottom: 1px solid @borde;
+		.clearfix;
 	}
 }
 
@@ -177,11 +187,12 @@ code, pre {
 }
 
 code {
-	display: block;
+	display: inline-block;
 	line-height: @interlinea * .666;
 	white-space: pre;
 	background-color: @ahuesado;
 	padding: 0 1ex 0 1ex;
+	.box-shadow(inset 0 0 1px darken(@ahuesado, 30%));
 }
 
 pre {

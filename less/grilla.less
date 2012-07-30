@@ -20,8 +20,8 @@ GRILLA
 }
 
 
-/* */
-[class*="col"] {
+.col,
+[class*="col-"] {
       float: left;
       margin-left: @interColumna;
       &.ver{
@@ -37,30 +37,30 @@ GRILLA
 }
 
 
-.a1, .col1{width: @1cols;}
-.a2, .col2{width: @2cols;}
-.a3, .col3{width: @3cols;}
-.a4, .col4{width: @4cols;}
-.a5, .col5{width: @5cols;}
-.a6, .col6{width: @6cols;}
-.a7, .col7{width: @7cols;}
-.a8, .col8{width: @8cols;}
-.a9, .col9{width: @9cols;}
-.a10, .col10{width: @10cols;}
-.a11, .col11{width: @11cols;}
-.a12, .col12{width: @12cols;}
-.a13, .col13{width: @13cols;}
-.a14, .col14{width: @14cols;}
-.a15, .col15{width: @15cols;}
-.a16, .col16{width: @16cols;}
-.a17, .col17{width: @17cols;}
-.a18, .col18{width: @18cols;}
-.a19, .col19{width: @19cols;}
-.a20, .col20{width: @20cols;}
-.a21, .col21{width: @21cols;}
-.a22, .col22{width: @22cols;}
-.a23, .col23{width: @23cols;}
-.a24, .col24{width: @24cols;}
+.a1, .col-1{width: @1cols;}
+.a2, .col-2{width: @2cols;}
+.a3, .col-3{width: @3cols;}
+.a4, .col-4{width: @4cols;}
+.a5, .col-5{width: @5cols;}
+.a6, .col-6{width: @6cols;}
+.a7, .col-7{width: @7cols;}
+.a8, .col-8{width: @8cols;}
+.a9, .col-9{width: @9cols;}
+.a10, .col-10{width: @10cols;}
+.a11, .col-11{width: @11cols;}
+.a12, .col-12{width: @12cols;}
+.a13, .col-13{width: @13cols;}
+.a14, .col-14{width: @14cols;}
+.a15, .col-15{width: @15cols;}
+.a16, .col-16{width: @16cols;}
+.a17, .col-17{width: @17cols;}
+.a18, .col-18{width: @18cols;}
+.a19, .col-19{width: @19cols;}
+.a20, .col-20{width: @20cols;}
+.a21, .col-21{width: @21cols;}
+.a22, .col-22{width: @22cols;}
+.a23, .col-23{width: @23cols;}
+.a24, .col-24{width: @24cols;}
 
 
 [class*="bloque"] {
@@ -102,6 +102,29 @@ GRILLA
 .bloque22{width: @bloque * 22;}
 .bloque23{width: @bloque * 23;}
 .bloque24{width: @bloque * 24;}
+
+// Estilos Semánticos
+
+.total{
+	.col;
+	.col-24;
+}
+
+.mitad{
+	.col;
+	.col-12;
+}
+
+.tercio{
+	.col;
+	.col-8;
+}
+
+.cuarto{
+	.col;
+	.col-6;
+}
+
 
 // Anchos porcerntuales
 
