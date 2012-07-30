@@ -8,8 +8,7 @@
 */
 
 
-.btn,
-a.btn {
+.btn {
 	display: inline-block;
 	cursor: pointer;
 	white-space: nowrap;
@@ -18,12 +17,11 @@ a.btn {
 	color: fade(@grisOscuro, 50%);
 	text-align: center;
 	
-	text-shadow: 1px 1px 0 fade(@blanco, 80%), -1px -1px 0 fade(@negro, 9%);
+	text-shadow: 1px 1px 0 fade(@blanco, 80%), -1px -1px 0 fade(@negro, 12%);
 	
 	vertical-align: middle;
 	#gradient > .vertical-three-colors(lighten(@grisClaro, 22%), lighten(@grisClaro, 14%), 80%, lighten(@grisClaro, 8%));
 	border: 1px solid @borde;
-
 
 	.border-radius(3px);
 	.box-shadow(inset fade(@blanco, 80%) 1px 1px 1px);
@@ -36,7 +34,7 @@ a.btn {
 
 
 .btn:hover {
-	.transition(.5s ease all);
+	.transition(1s ease all);
 	text-decoration: none;
 	#gradient > .vertical-three-colors(lighten(@grisClaro, 20%), lighten(@grisClaro, 10%), 50%, lighten(@grisClaro, 5%));
 	.box-shadow(inset fade(@negro, 20%) 0 0 4px);
