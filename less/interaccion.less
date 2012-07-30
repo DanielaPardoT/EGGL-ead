@@ -8,12 +8,14 @@
 */
 
 
-.btn {
+.btn
+ {
 	display: inline-block;
 	cursor: pointer;
 	white-space: nowrap;
+	font-size: @cuerpo * .8;
 	
-	padding: 3px 10px 5px 10px;
+	padding: 4px 10px 5px 10px;
 	color: fade(@grisOscuro, 50%);
 	text-align: center;
 	
@@ -25,17 +27,35 @@
 
 	.border-radius(3px);
 	.box-shadow(inset fade(@blanco, 80%) 1px 1px 1px);
+	
+	&:hover {
+	.transition(.5s ease all);
+	text-decoration: none;
+	#gradient > .vertical-three-colors(lighten(@grisClaro, 20%), lighten(@grisClaro, 10%), 50%, lighten(@grisClaro, 5%));
+	.box-shadow(inset fade(@negro, 20%) 0 0 4px);
+	}
   
 	&.grande{
 		font-size: @cuerpo;
 		padding: @cuerpo/2 @cuerpo;
 		}
+	&.gigante{
+		font-size: @cuerpo;
+		padding: @cuerpo @cuerpo*2;
+	}
+	&.rojo{
+		color: fade(@negro, 55%);
+		text-shadow: 1px 1px 0 fade(@blanco, 40%), -1px -1px 0 fade(@negro, 12%);
+		#gradient > .vertical-three-colors(lighten(@rojo, 42%), @rojo, 50%, darken(@rojo, 10%));
+		.box-shadow(inset fade(@blanco, 40%) 1px 1px 1px);
+		&:hover{
+			#gradient > .vertical-three-colors(@rojo, darken(@rojo, 10%), 20%, darken(@rojo, 20%));
+			.box-shadow(inset fade(@negro, 10%) 1px 1px 10px);
+		}
+	
+	}
 }
 
 
-.btn:hover {
-	.transition(1s ease all);
-	text-decoration: none;
-	#gradient > .vertical-three-colors(lighten(@grisClaro, 20%), lighten(@grisClaro, 10%), 50%, lighten(@grisClaro, 5%));
-	.box-shadow(inset fade(@negro, 20%) 0 0 4px);
-}
+
+

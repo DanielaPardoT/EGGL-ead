@@ -1391,7 +1391,8 @@ footer p {
   display: inline-block;
   cursor: pointer;
   white-space: nowrap;
-  padding: 3px 10px 5px 10px;
+  font-size: 12.8px;
+  padding: 4px 10px 5px 10px;
   color: rgba(64, 64, 64, 0.5);
   text-align: center;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8), -1px -1px 0 rgba(0, 0, 0, 0.12);
@@ -1413,16 +1414,12 @@ footer p {
   -moz-box-shadow: inset rgba(255, 255, 255, 0.8) 1px 1px 1px;
   box-shadow: inset rgba(255, 255, 255, 0.8) 1px 1px 1px;
 }
-.btn.grande {
-  font-size: 16px;
-  padding: 8px 16px;
-}
 .btn:hover {
-  -webkit-transition: 1s ease all;
-  -moz-transition: 1s ease all;
-  -ms-transition: 1s ease all;
-  -o-transition: 1s ease all;
-  transition: 1s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+  transition: 0.5s ease all;
   text-decoration: none;
   background-color: #d6d6d6;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), color-stop(50%, #d9d9d9), to(#cccccc));
@@ -1436,6 +1433,44 @@ footer p {
   -webkit-box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 4px;
   -moz-box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 4px;
   box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 4px;
+}
+.btn.grande {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.btn.gigante {
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.btn.rojo {
+  color: rgba(0, 0, 0, 0.55);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4), -1px -1px 0 rgba(0, 0, 0, 0.12);
+  background-color: #be0000;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9f9f), color-stop(50%, #c80000), to(#950000));
+  background-image: -webkit-linear-gradient(#ff9f9f, #c80000 50%, #950000);
+  background-image: -moz-linear-gradient(top, #ff9f9f, #c80000 50%, #950000);
+  background-image: -ms-linear-gradient(#ff9f9f, #c80000 50%, #950000);
+  background-image: -o-linear-gradient(#ff9f9f, #c80000 50%, #950000);
+  background-image: linear-gradient(#ff9f9f, #c80000 50%, #950000);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9f9f', endColorstr='#950000', GradientType=0);
+  -webkit-box-shadow: inset rgba(255, 255, 255, 0.4) 1px 1px 1px;
+  -moz-box-shadow: inset rgba(255, 255, 255, 0.4) 1px 1px 1px;
+  box-shadow: inset rgba(255, 255, 255, 0.4) 1px 1px 1px;
+}
+.btn.rojo:hover {
+  background-color: #8b0000;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c80000), color-stop(20%, #950000), to(#620000));
+  background-image: -webkit-linear-gradient(#c80000, #950000 20%, #620000);
+  background-image: -moz-linear-gradient(top, #c80000, #950000 20%, #620000);
+  background-image: -ms-linear-gradient(#c80000, #950000 20%, #620000);
+  background-image: -o-linear-gradient(#c80000, #950000 20%, #620000);
+  background-image: linear-gradient(#c80000, #950000 20%, #620000);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c80000', endColorstr='#620000', GradientType=0);
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 10px;
+  -moz-box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 10px;
+  box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 10px;
 }
 /**
 
@@ -1463,4 +1498,5 @@ table th {
 }
 table td {
   color: rgba(0, 0, 0, 0.6);
+  vertical-align: top;
 }
