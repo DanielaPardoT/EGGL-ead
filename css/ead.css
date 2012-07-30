@@ -852,16 +852,105 @@ GRILLA
 Vers�til 
 
 */
-@media (min-width: 0) and (max-width: 479px) {
-  div.pag {
-    width: 100%;
+@media (min-width: 0) and (max-width: 799px) {
+  .pag {
+    width: 368px;
   }
+  .total,
   .mitad {
-    width: 100%;
+    width: 368px;
+  }
+  .a1,
+  .col-1 {
+    width: 32px;
+  }
+  .a2,
+  .col-2 {
+    width: 80px;
+  }
+  .a3,
+  .col-3,
+  .a4,
+  .col-4 {
+    width: 176px;
+  }
+  .a5,
+  .col-5,
+  .a6,
+  .col-6,
+  .a7,
+  .col-7,
+  .a8,
+  .col-8,
+  .a9,
+  .col-9,
+  .a10,
+  .col-10,
+  .a11,
+  .col-11,
+  .a12,
+  .col-12,
+  .a13,
+  .col-13,
+  .a14,
+  .col-14,
+  .a15,
+  .col-15,
+  .a16,
+  .col-16,
+  .a17,
+  .col-17,
+  .a18,
+  .col-18,
+  .a19,
+  .col-19,
+  .a20,
+  .col-20,
+  .a21,
+  .col-21,
+  .a22,
+  .col-22,
+  .a23,
+  .col-23,
+  .a24,
+  .col-24 {
+    width: 368px;
+  }
+  .bloque1 {
+    width: 50px;
+  }
+  .bloque2,
+  .bloque3 {
+    width: 100px;
+  }
+  .bloque4,
+  .bloque5,
+  .bloque6,
+  .bloque7 {
+    width: 200px;
+  }
+  .bloque8,
+  .bloque9,
+  .bloque10,
+  .bloque11,
+  .bloque12,
+  .bloque13,
+  .bloque14,
+  .bloque15,
+  .bloque16,
+  .bloque17,
+  .bloque18,
+  .bloque19,
+  .bloque20,
+  .bloque21,
+  .bloque22,
+  .bloque23,
+  .bloque24 {
+    width: 400px;
   }
 }
-@media (min-width: 480px) and (max-width: 1249px) {
-  div.pag {
+@media (min-width: 800px) and (max-width: 1184px) {
+  .pag {
     width: 752px;
   }
   .total {
@@ -880,10 +969,61 @@ Vers�til
     font-size: 14px;
     line-height: 180%;
   }
-}
-@media (min-width: 1250px) and (max-width: 1799px) {
-  div.pag {
-    width: 1136px;
+  .bloque1 {
+    width: 49px;
+  }
+  .bloque2 {
+    width: 98px;
+  }
+  .bloque3 {
+    width: 147px;
+  }
+  .bloque4 {
+    width: 196px;
+  }
+  .bloque5 {
+    width: 245px;
+  }
+  .bloque6 {
+    width: 294px;
+  }
+  .bloque7 {
+    width: 343px;
+  }
+  .bloque8 {
+    width: 392px;
+  }
+  .bloque9 {
+    width: 441px;
+  }
+  .bloque10 {
+    width: 490px;
+  }
+  .bloque11 {
+    width: 539px;
+  }
+  .bloque12 {
+    width: 588px;
+  }
+  .bloque13 {
+    width: 637px;
+  }
+  .bloque14 {
+    width: 686px;
+  }
+  .bloque15 {
+    width: 735px;
+  }
+  .bloque16,
+  .bloque17,
+  .bloque18,
+  .bloque19,
+  .bloque20,
+  .bloque21,
+  .bloque22,
+  .bloque23,
+  .bloque24 {
+    width: 784px;
   }
 }
 * {
