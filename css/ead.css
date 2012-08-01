@@ -201,11 +201,11 @@ textarea {
   overflow: auto;
 }
 ::selection {
-  background: rgba(0, 200, 200, 0.1);
+  background: rgba(0, 170, 170, 0.1);
   color: colorBackground;
 }
 ::-moz-selection {
-  background: rgba(0, 200, 200, 0.1);
+  background: rgba(0, 170, 170, 0.1);
   color: colorBackground;
 }
 img::selection {
@@ -215,7 +215,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  -webkit-tap-highlight-color: #ffc8c8;
+  -webkit-tap-highlight-color: #ffaaaa;
 }
 /* Variables.less
  * Variables to customize the look and feel
@@ -253,6 +253,7 @@ GRILLA
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 12px;
 }
 .fila {
+  background-color: transparent;
   margin-left: -24px;
   margin-right: -24px;
   *zoom: 1;
@@ -269,6 +270,7 @@ GRILLA
 [class*="col-"] {
   float: left;
   margin-left: 24px;
+  background-color: transparent;
 }
 .col.ver,
 [class*="col-"].ver {
@@ -471,6 +473,7 @@ GRILLA
 .total {
   float: left;
   margin-left: 24px;
+  background-color: transparent;
   width: 1152px;
 }
 .total.ver {
@@ -488,6 +491,7 @@ GRILLA
 .mitad {
   float: left;
   margin-left: 24px;
+  background-color: transparent;
   width: 564px;
 }
 .mitad.ver {
@@ -505,6 +509,7 @@ GRILLA
 .tercio {
   float: left;
   margin-left: 24px;
+  background-color: transparent;
   width: 368px;
 }
 .tercio.ver {
@@ -522,6 +527,7 @@ GRILLA
 .cuarto {
   float: left;
   margin-left: 24px;
+  background-color: transparent;
   width: 270px;
 }
 .cuarto.ver {
@@ -532,6 +538,24 @@ GRILLA
   border-radius: 3px;
 }
 .cuarto.ver p {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 6px;
+}
+.tres-cuartos {
+  float: left;
+  margin-left: 24px;
+  background-color: transparent;
+  width: 858px;
+}
+.tres-cuartos.ver {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.tres-cuartos.ver p {
   font-size: 11px;
   font-weight: bold;
   padding: 6px;
@@ -839,13 +863,146 @@ GRILLA
 .margen-superior {
   margin-top: 24px;
 }
+.margen-superior-negativo {
+  margin-top: -24px;
+}
 .margen-inferior {
   margin-bottom: 24px;
+}
+.margen-inferior-negativo {
+  margin-bottom: -24px;
 }
 .centrada,
 .centrado {
   text-align: center;
   margin: 0 auto;
+}
+.negro {
+  color: #000000;
+}
+.bg-negro {
+  background-color: #000000;
+}
+.gris-oscuro {
+  color: #404040;
+}
+.bg-gris-oscuro {
+  background-color: #404040;
+}
+.gris {
+  color: #808080;
+}
+.bg-gris {
+  background-color: #808080;
+}
+.gris-claro {
+  color: #bfbfbf;
+}
+.bg-gris-claro {
+  background-color: #bfbfbf;
+}
+.blanco {
+  color: #ffffff;
+}
+.bg-blanco {
+  background-color: #ffffff;
+}
+.celeste {
+  color: rgba(87, 190, 255, 0.95);
+}
+.bg-celeste {
+  background-color: rgba(87, 190, 255, 0.95);
+}
+.azul {
+  color: rgba(30, 105, 180, 0.95);
+}
+.bg-azul {
+  background-color: rgba(30, 105, 180, 0.95);
+}
+.azul-oscuro {
+  color: rgba(19, 67, 114, 0.95);
+}
+.bg-azul-oscuro {
+  background-color: rgba(19, 67, 114, 0.95);
+}
+.verde {
+  color: rgba(120, 170, 20, 0.95);
+}
+.bg-verde {
+  background-color: rgba(120, 170, 20, 0.95);
+}
+.verde-oscuro {
+  color: rgba(72, 102, 12, 0.95);
+}
+.bg-verde-oscuro {
+  background-color: rgba(72, 102, 12, 0.95);
+}
+.verde-claro {
+  color: rgba(231, 248, 197, 0.95);
+}
+.bg-verde-claro {
+  background-color: rgba(231, 248, 197, 0.95);
+}
+.rojo {
+  color: #aa0000;
+}
+.bg-rojo {
+  background-color: #aa0000;
+}
+.rojo-oscuro {
+  color: #440000;
+}
+.bg-rojo-oscuro {
+  background-color: #440000;
+}
+.ocre {
+  color: #aaa046;
+}
+.bg-ocre {
+  background-color: #aaa046;
+}
+.amarillo {
+  color: rgba(220, 200, 40, 0.95);
+}
+.bg-amarillo {
+  background-color: rgba(220, 200, 40, 0.95);
+}
+.pizarra {
+  color: #323c46;
+}
+.bg-pizarra {
+  background-color: #323c46;
+}
+.ahuesado {
+  color: #eff2db;
+}
+.bg-ahuesado {
+  background-color: #eff2db;
+}
+.borde {
+  color: rgba(128, 128, 128, 0.3);
+}
+.bg-borde {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.color-opuesto {
+  color: #00aaaa;
+}
+.bg-color-opuesto {
+  background-color: #00aaaa;
+}
+.caja {
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 123px;
+  height: 24px;
+}
+.sombra {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0 4px;
 }
 /* 
 
@@ -948,6 +1105,10 @@ Comentario
   .bloque24 {
     width: 416px;
   }
+  p {
+    font-size: 14px;
+    line-height: 180%;
+  }
 }
 @media (min-width: 809px) and (max-width: 1201px) {
   .pag {
@@ -1041,7 +1202,7 @@ Comentario
   font-size: 80%;
 }
 .color {
-  color: #c80000;
+  color: #aa0000;
 }
 .uc {
   text-transform: uppercase;
@@ -1049,6 +1210,7 @@ Comentario
 .fina,
 .fino {
   font-weight: 100;
+  letter-spacing: .03ex;
 }
 body {
   background-color: #e6e6e6;
@@ -1062,7 +1224,7 @@ body {
   background-repeat: repeat;
 }
 a {
-  color: #c80000;
+  color: #aa0000;
   text-decoration: none;
 }
 a:hover {
@@ -1070,14 +1232,13 @@ a:hover {
   text-decoration: underline;
 }
 a:visited {
-  color: #c80000;
+  color: #aa0000;
   text-decoration: line-through;
 }
 p {
   margin-bottom: 28.96px;
   line-height: 28.96px;
   color: rgba(0, 0, 0, 0.6);
-  text-align: justify;
 }
 p.grande {
   font-size: 24px;
@@ -1091,6 +1252,18 @@ p.chico {
   color: rgba(0, 0, 0, 0.45);
 }
 p.poema {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 28.96px;
+  white-space: pre;
+  color: rgba(0, 0, 0, 0.8);
+}
+div.poema {
+  margin-bottom: 28.96px;
+  line-height: 28.96px;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 28.96px;
   white-space: pre;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -1176,10 +1349,6 @@ ol {
 li {
   line-height: 28.96px;
   color: #808080;
-}
-ul.unstyled {
-  list-style: none;
-  margin-left: 0;
 }
 dl {
   margin-bottom: 28.96px;
@@ -1277,7 +1446,7 @@ pre {
   margin: -16px 0 0 0;
 }
 .main {
-  color: #c80000;
+  color: #aa0000;
   font-size: 48px;
 }
 .tdc {
@@ -1305,10 +1474,10 @@ pre {
   font-weight: 100;
 }
 .pizarra a {
-  color: #00c8c8;
+  color: #00aaaa;
 }
 .pizarra a:hover {
-  background-color: rgba(0, 200, 200, 0.1);
+  background-color: rgba(0, 170, 170, 0.1);
 }
 nav {
   margin: 0 -24px;
@@ -1354,7 +1523,7 @@ nav ul li a:hover,
 nav ol li a:hover {
   text-decoration: none;
   background-color: #ffffff;
-  color: #c80000 !important;
+  color: #aa0000 !important;
   -webkit-transition: 0.5s ease all;
   -moz-transition: 0.5s ease all;
   -ms-transition: 0.5s ease all;
@@ -1362,23 +1531,40 @@ nav ol li a:hover {
   transition: 0.5s ease all;
 }
 footer {
-  margin: 24px -24px -48px -24px;
-  background-color: #e6e6e6;
-  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
-  *zoom: 1;
-}
-footer:before,
-footer:after {
-  display: table;
-  content: "";
-}
-footer:after {
-  clear: both;
+  width: 1152px;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 24px;
+  line-height: 20.272px;
 }
 footer p {
-  margin: 48px 24px;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  padding-top: 16px;
+  font-size: 11.2px;
+  letter-spacing: inherit;
+}
+footer p img {
+  display: inline-block;
+  margin-bottom: -4px;
+}
+footer address {
+  font-size: 11.2px;
+  line-height: inherit;
+}
+footer nav {
+  border: none;
+  line-height: inherit;
+}
+footer nav ul li {
+  margin-left: 24px;
+}
+footer nav ul li a {
+  font-size: 11.2px;
+  padding: 4px 10px 4px 10px;
+  text-transform: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 /*
 
@@ -1388,6 +1574,13 @@ footer p {
 
 
 */
+* {
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -1416,11 +1609,6 @@ footer p {
   box-shadow: inset rgba(255, 255, 255, 0.8) 1px 1px 1px;
 }
 .btn:hover {
-  -webkit-transition: 0.5s ease all;
-  -moz-transition: 0.5s ease all;
-  -ms-transition: 0.5s ease all;
-  -o-transition: 0.5s ease all;
-  transition: 0.5s ease all;
   text-decoration: none;
   background-color: #d6d6d6;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), color-stop(50%, #d9d9d9), to(#cccccc));
@@ -1443,35 +1631,37 @@ footer p {
   font-size: 16px;
   padding: 16px 32px;
 }
-.btn.rojo {
-  color: rgba(0, 0, 0, 0.55);
+.btn.accion {
+  color: rgba(19, 67, 114, 0.85);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4), -1px -1px 0 rgba(0, 0, 0, 0.12);
-  background-color: #be0000;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff9f9f), color-stop(50%, #c80000), to(#950000));
-  background-image: -webkit-linear-gradient(#ff9f9f, #c80000 50%, #950000);
-  background-image: -moz-linear-gradient(top, #ff9f9f, #c80000 50%, #950000);
-  background-image: -ms-linear-gradient(#ff9f9f, #c80000 50%, #950000);
-  background-image: -o-linear-gradient(#ff9f9f, #c80000 50%, #950000);
-  background-image: linear-gradient(#ff9f9f, #c80000 50%, #950000);
-  background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9f9f', endColorstr='#950000', GradientType=0);
+  background-color: rgba(64, 156, 225, 0.95);
+  background-image: -moz-linear-gradient(top, rgba(87, 190, 255, 0.95), rgba(30, 105, 180, 0.95));
+  background-image: -ms-linear-gradient(top, rgba(87, 190, 255, 0.95), rgba(30, 105, 180, 0.95));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(87, 190, 255, 0.95)), to(rgba(30, 105, 180, 0.95)));
+  background-image: -webkit-linear-gradient(top, rgba(87, 190, 255, 0.95), rgba(30, 105, 180, 0.95));
+  background-image: -o-linear-gradient(top, rgba(87, 190, 255, 0.95), rgba(30, 105, 180, 0.95));
+  background-image: linear-gradient(top, rgba(87, 190, 255, 0.95), rgba(30, 105, 180, 0.95));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(87, 190, 255, 0.95)', endColorstr='rgba(30, 105, 180, 0.95)', GradientType=0);
   -webkit-box-shadow: inset rgba(255, 255, 255, 0.4) 1px 1px 1px;
   -moz-box-shadow: inset rgba(255, 255, 255, 0.4) 1px 1px 1px;
   box-shadow: inset rgba(255, 255, 255, 0.4) 1px 1px 1px;
 }
-.btn.rojo:hover {
-  background-color: #8b0000;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c80000), color-stop(20%, #950000), to(#620000));
-  background-image: -webkit-linear-gradient(#c80000, #950000 20%, #620000);
-  background-image: -moz-linear-gradient(top, #c80000, #950000 20%, #620000);
-  background-image: -ms-linear-gradient(#c80000, #950000 20%, #620000);
-  background-image: -o-linear-gradient(#c80000, #950000 20%, #620000);
-  background-image: linear-gradient(#c80000, #950000 20%, #620000);
-  background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c80000', endColorstr='#620000', GradientType=0);
-  -webkit-box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 10px;
-  -moz-box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 10px;
-  box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 10px;
+.btn.accion:hover {
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-color: rgba(8, 115, 190, 0.95);
+  background-image: -moz-linear-gradient(top, rgba(0, 147, 240, 0.95), rgba(19, 67, 114, 0.95));
+  background-image: -ms-linear-gradient(top, rgba(0, 147, 240, 0.95), rgba(19, 67, 114, 0.95));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 147, 240, 0.95)), to(rgba(19, 67, 114, 0.95)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 147, 240, 0.95), rgba(19, 67, 114, 0.95));
+  background-image: -o-linear-gradient(top, rgba(0, 147, 240, 0.95), rgba(19, 67, 114, 0.95));
+  background-image: linear-gradient(top, rgba(0, 147, 240, 0.95), rgba(19, 67, 114, 0.95));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 147, 240, 0.95)', endColorstr='rgba(19, 67, 114, 0.95)', GradientType=0);
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.4) 1px 1px 10px;
+  -moz-box-shadow: inset rgba(0, 0, 0, 0.4) 1px 1px 10px;
+  box-shadow: inset rgba(0, 0, 0, 0.4) 1px 1px 10px;
 }
 /*comentario*/
 /**

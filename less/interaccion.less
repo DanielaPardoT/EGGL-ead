@@ -7,6 +7,9 @@
 
 */
 
+*{
+	.transition(.5s ease all);
+}
 
 .btn
  {
@@ -16,22 +19,21 @@
 	font-size: @cuerpo * .8;
 	
 	padding: 4px 10px 5px 10px;
-	color: fade(@grisOscuro, 50%);
+	color: fade(@gris-oscuro, 50%);
 	text-align: center;
 	
 	text-shadow: 1px 1px 0 fade(@blanco, 80%), -1px -1px 0 fade(@negro, 12%);
 	
 	vertical-align: middle;
-	#gradient > .vertical-three-colors(lighten(@grisClaro, 22%), lighten(@grisClaro, 14%), 80%, lighten(@grisClaro, 8%));
+	#gradient > .vertical-three-colors(lighten(@gris-claro, 22%), lighten(@gris-claro, 14%), 80%, lighten(@gris-claro, 8%));
 	border: 1px solid @borde;
 
 	.border-radius(3px);
 	.box-shadow(inset fade(@blanco, 80%) 1px 1px 1px);
 	
 	&:hover {
-	.transition(.5s ease all);
 	text-decoration: none;
-	#gradient > .vertical-three-colors(lighten(@grisClaro, 20%), lighten(@grisClaro, 10%), 50%, lighten(@grisClaro, 5%));
+	#gradient > .vertical-three-colors(lighten(@gris-claro, 20%), lighten(@gris-claro, 10%), 50%, lighten(@gris-claro, 5%));
 	.box-shadow(inset fade(@negro, 20%) 0 0 4px);
 	}
   
@@ -43,14 +45,17 @@
 		font-size: @cuerpo;
 		padding: @cuerpo @cuerpo*2;
 	}
-	&.rojo{
-		color: fade(@negro, 55%);
+	&.accion{
+		color: fade(@azul-oscuro, 85%);
 		text-shadow: 1px 1px 0 fade(@blanco, 40%), -1px -1px 0 fade(@negro, 12%);
-		#gradient > .vertical-three-colors(lighten(@rojo, 42%), @rojo, 50%, darken(@rojo, 10%));
+		
+		#gradient > .vertical(@celeste, @azul);
 		.box-shadow(inset fade(@blanco, 40%) 1px 1px 1px);
 		&:hover{
-			#gradient > .vertical-three-colors(@rojo, darken(@rojo, 10%), 20%, darken(@rojo, 20%));
-			.box-shadow(inset fade(@negro, 10%) 1px 1px 10px);
+			color: fade(@blanco, 75%);
+			text-shadow: 1px 1px 0 fade(@negro, 12%);
+			#gradient > .vertical(darken(@celeste, 20%), @azul-oscuro);
+			.box-shadow(inset fade(@negro, 40%) 1px 1px 10px);
 		}
 	
 	}

@@ -31,7 +31,7 @@ mayorly
           transition: @transition;
 }
 
-// parte extraña que se usa: #gradient > .vertical(lighten(@grisClaro, 40%), lighten(@grisClaro, 10%) ); por ejemplo...
+// parte extraña que se usa: #gradient > .vertical(lighten(@gris-claro, 40%), lighten(@gris-claro, 10%) ); por ejemplo...
 
 #gradient {
   .horizontal(@startColor: #555, @endColor: #333) {
@@ -118,4 +118,13 @@ mayorly
   &:after {
     clear: both;
   }
+}
+
+.multi-columna(@columnas, @intercolumna) {
+	-moz-column-count: @columnas;
+	-moz-column-gap: @intercolumna;
+	-webkit-column-count: @columnas;
+	-webkit-column-gap: @intercolumna;
+	column-count: @columnas;
+	column-gap: @intercolumna;
 }

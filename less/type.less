@@ -16,31 +16,32 @@
 	font-size: 80%;
 }
 .color{
-	color: @linkColor;
+	color: @link-color;
 }
 .uc{
 	text-transform: uppercase;
 }
 .fina, .fino{
 	font-weight: 100;
+	letter-spacing: .03ex; 
 }
 	
 	
 body{
-	#gradient > .striped(lighten(@grisClaro, 15%), -45deg);
+	#gradient > .striped(lighten(@gris-claro, 15%), -45deg);
 	background-size: 10px 10px;
 	background-repeat: repeat;
 }
 
 a{
-	color: @colorLink;
+	color: @color-link;
 	text-decoration: none;
 	&:hover{
 		background-color: @ahuesado;
 		text-decoration: underline;
 	}
 	&:visited{
-		color: @colorLink;
+		color: @color-link;
 		text-decoration: line-through;
 	}
 }
@@ -49,7 +50,6 @@ p {
   margin-bottom: @interlinea;
   line-height: @interlinea;
   color: fade(@negro, 60%);
-  text-align: justify;
 
   &.grande{
   		font-size: @cuerpo * 1.5;
@@ -63,18 +63,30 @@ p {
     color: fade(@negro, 45%);
   }
   &.poema{
-	  white-space: pre;
-	  color: fade(@negro, 80%);
+  	font-family: @serif;
+  	font-size: @cuerpo - 2;
+  	line-height: @interlinea;
+	white-space: pre;
+	color: fade(@negro, 80%);
   }
 }
 
+div.poema{
+	margin-bottom: @interlinea;
+	line-height: @interlinea;
+    font-family: @serif;
+  	font-size: @cuerpo - 2;
+  	line-height: @interlinea;
+	white-space: pre;
+	color: fade(@negro, 80%);
+}
 // Cabeceras
 // --------
 
 h1, h2, h3, h4, h5, h6 {
 
 	font-weight: bold;
-	color: @grisOscuro;
+	color: @gris-oscuro;
 	margin: 0 0 @interlinea 0;
 	vertical-align: bottom;
 	
@@ -113,10 +125,6 @@ li {
   line-height: @interlinea;
   color: @gris;
 }
-ul.unstyled {
-  list-style: none;
-  margin-left: 0;
-}
 
 // Description Lists
 dl {
@@ -152,7 +160,7 @@ em {
   line-height: inherit;
 }
 .muted {
-  color: @grisClaro;
+  color: @gris-claro;
 }
 
 // Blockquotes
@@ -164,7 +172,7 @@ blockquote {
   
   small {
     display: block;
-    color: @grisClaro;
+    color: @gris-claro;
     &:before {
       content: '\2014 \00A0';
     }
@@ -222,12 +230,12 @@ pre {
 }
 
 .big{
-	color: @grisClaro;
+	color: @gris-claro;
 	margin: -@em 0 0 0;
 	
 }
 .main{
-	color: @linkColor;
+	color: @link-color;
 	font-size: @font-size * 3;
 }
 .tdc{

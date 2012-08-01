@@ -10,18 +10,22 @@
 
 // Grises
 @negro:				rgba(0, 0, 0, 1);
-@grisOscuro:		lighten(@negro, 25%);
+@gris-oscuro:		lighten(@negro, 25%);
 @gris:				lighten(@negro, 50%);
-@grisClaro:			lighten(@negro, 75%);
+@gris-claro:		lighten(@negro, 75%);
 @blanco:			rgba(255, 255, 255, 1);
 
 // Colores
-@azul:				rgba(43, 115, 225, .95);
-@azulOscuro:		darken(@azul, 15%);
-@verde:				rgba(99, 160, 33, .95);
-@verdeOscuro:		darken(@verde, 15%);
-@rojo:				rgba(200, 0, 0, 1);
-@rojoOscuro:		darken(@rojo, 20%);
+@celeste:			rgba(87, 190, 255, .95);
+@azul:				rgba(30, 105, 180, .95);
+@azul-oscuro:		darken(@azul, 15%);
+@verde:				rgba(120, 170, 20, .95);
+@verde-claro:		lighten(@verde, 50%);
+@verde-oscuro:		darken(@verde, 15%);
+@rojo:				rgba(170, 0, 0, 1);
+@rojo-oscuro:		darken(@rojo, 20%);
+@amarillo:			rgba(220, 200, 40, .95);
+@ocre:				rgba(170, 160, 70, 1);
 
 // Especiales
 @pizarra:			rgba(50, 60, 70, 1);
@@ -29,10 +33,10 @@
 @borde:				fade(@gris, 30%);
 
 // Links
-@linkColor:         @rojo;
-@colorLink:			@linkColor;
-@linkColorHover:    darken(@linkColor, 15%);
-@colorOpuesto:		spin(@linkColor, 180);
+@link-color:		@rojo;
+@color-link:		@link-color;
+@link-colorHover:	@rojo-oscuro;
+@color-opuesto:		spin(@link-color, 180);
 
 // Proporciones tipográficas
 @font-size:			16px;					// tamaño base en pixeles

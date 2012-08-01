@@ -1,8 +1,64 @@
-.margen-superior{margin-top: @interColumna;}
-
-.margen-inferior{margin-bottom: @interColumna;}
+.margen-superior{margin-top: @interColumna}
+.margen-superior-negativo{margin-top: -@interColumna}
+.margen-inferior{margin-bottom: @interColumna}
+.margen-inferior-negativo{margin-bottom: -@interColumna}
 
 .centrada, .centrado{
 	text-align: center;
-	margin:  0 auto;
+	margin:  0 auto
+}
+
+// Grises
+.negro{color: @negro}
+.bg-negro{background-color: @negro}
+.gris-oscuro{color: @gris-oscuro}
+.bg-gris-oscuro{background-color: @gris-oscuro}
+.gris{color: @gris}
+.bg-gris{background-color: @gris}
+.gris-claro{color: @gris-claro}
+.bg-gris-claro{background-color: @gris-claro}
+.blanco{color: @blanco}
+.bg-blanco{background-color: @blanco}
+
+// Colores
+.celeste{color: @celeste}
+.bg-celeste{background-color: @celeste}
+.azul{color: @azul}
+.bg-azul{background-color: @azul}
+.azul-oscuro{color: @azul-oscuro}
+.bg-azul-oscuro{background-color: @azul-oscuro}
+.verde{color: @verde}
+.bg-verde{background-color: @verde}
+.verde-oscuro{color: @verde-oscuro}
+.bg-verde-oscuro{background-color: @verde-oscuro}
+.verde-claro{color: @verde-claro}
+.bg-verde-claro{background-color: @verde-claro}
+.rojo{color: @rojo}
+.bg-rojo{background-color: @rojo}
+.rojo-oscuro{color: @rojo-oscuro}
+.bg-rojo-oscuro{background-color: @rojo-oscuro}
+.ocre{color: @ocre}
+.bg-ocre{background-color: @ocre}
+.amarillo{color: @amarillo}
+.bg-amarillo{background-color: @amarillo}
+
+// Especiales
+.pizarra{color: @pizarra}
+.bg-pizarra{background-color: @pizarra}
+.ahuesado{color: @ahuesado}
+.bg-ahuesado{background-color: @ahuesado}
+.borde{color: @borde}
+.bg-borde{background-color: @borde}
+.color-opuesto{color: @color-opuesto}
+.bg-color-opuesto{background-color: @color-opuesto}
+
+.caja{
+	display: inline-block;
+	.border-radius(5px);
+	width: @3cols;
+	height: @interColumna;
+}
+
+.sombra{
+	.box-shadow(fade(@negro, 15%) 0 0 4px);
 }

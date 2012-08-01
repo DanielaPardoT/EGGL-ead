@@ -14,6 +14,7 @@ GRILLA
 }
 
 .fila{
+	background-color: transparent;
 	margin-left: -@interColumna;
 	margin-right: -@interColumna;
 	.clearfix;
@@ -24,6 +25,7 @@ GRILLA
 [class*="col-"] {
       float: left;
       margin-left: @interColumna;
+      background-color: transparent;
       &.ver{
 	      color: fade(@negro, 30%);
 	      background-color: fade(@negro, 5%);
@@ -69,7 +71,7 @@ GRILLA
       &.ver{
       	color: fade(@negro, 30%);
 		background-color: fade(@negro, 5%);
-		.box-shadow(inset 0 0 2px @grisClaro);
+		.box-shadow(inset 0 0 2px @gris-claro);
 			p{
 				font-size: 11px;
 				font-weight: bold;
@@ -123,6 +125,11 @@ GRILLA
 .cuarto{
 	.col;
 	.col-6;
+}
+
+.tres-cuartos{
+	.col;
+	.col-18;
 }
 
 
