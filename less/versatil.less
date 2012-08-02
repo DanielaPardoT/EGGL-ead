@@ -16,13 +16,11 @@ Comentario
 
 
 
-@media (min-width: 0) and (max-width: @tam17m) {
+@media (min-width: @tam8) and (max-width: @tam17m) {
 
-	 .pag {width: @tam8;}
-	 
-	 .total,
-	 .mitad{
-		 .col-8;
+	 .pag, footer {width: @tam12;}
+	 footer, footer p, footer div address{
+		 line-height: @interlinea * .5;
 	 }
 	 
 	.a1, .col-1{width: @1cols;}
@@ -30,7 +28,7 @@ Comentario
 	.a3, .col-3,
 	.a4, .col-4{width: @4cols;}
 	.a5, .col-5,
-	.a6, .col-6,
+	.a6, .col-6{width: @6cols;}
 	.a7, .col-7,
 	.a8, .col-8,
 	.a9, .col-9,
@@ -48,7 +46,7 @@ Comentario
 	.a21, .col-21,
 	.a22, .col-22,
 	.a23, .col-23,
-	.a24, .col-24{width: @8cols;}
+	.a24, .col-24{width: @12cols;}
 	 
 	 @bloque: (@tam8 + 2*@interColumna) / 8;
 	 .bloque1{width: @bloque;}
@@ -80,60 +78,125 @@ Comentario
 		font-size: 14px;
 		line-height: 180%;
 	}
-
+	.total{
+	.col;
+	.col-12;
+	}
+	
+	.mitad{
+		.col;
+		.col-12;
+	}
+	
+	.tercio{
+		.col;
+		.col-6;
+	}
+	
+	.cuarto{
+		.col;
+		.col-12;
+	}
+	
+	.tres-cuartos{
+		.col;
+		.col-12;
+	}
 }
 
 
 @media (min-width: @tam17) and (max-width: @tam25) {
 
-	.pag {width: @tam16;}
-	
-		.total{
-		.col-16;
-	}
-	
-	.mitad{
-		.col-8;
-	}
-	.tercio{
-		.col-5;
-	}
-	.cuarto{
-		.col-3;
-	}
-	
+	.pag, footer {width: @tam16;}
+	footer, footer p, footer div address{
+		 line-height: @interlinea * .65;
+	 }
 	p{
 		font-size: 14px;
 		line-height: 180%;
 
 	}
 	
+	.a1, .col-1{width: @1cols;}
+	.a2, .col-2{width: @2cols;}
+	.a3, .col-3{width: @3cols;}
+	.a4, .col-4{width: @4cols;}
+	.a5, .col-5{width: @5cols;}
+	.a6, .col-6{width: @6cols;}
+	.a7, .col-7{width: @7cols;}
+	.a8, .col-8{width: @8cols;}
+	.a9, .col-9{width: @9cols;}
+	.a10, .col-10{width: @10cols;}
+	.a11, .col-11{width: @11cols;}
+	.a12, .col-12{width: @12cols;}
+	.a13, .col-13{width: @13cols;}
+	.a14, .col-14{width: @14cols;}
+	.a15, .col-15{width: @15cols;}
+	.a16, .col-16,
+	.a17, .col-17,
+	.a18, .col-18,
+	.a19, .col-19,
+	.a20, .col-20,
+	.a21, .col-21,
+	.a22, .col-22,
+	.a23, .col-23,
+	.a24, .col-24{width: @16cols;}
+	
 	@bloque: (@tam16 + 2*@interColumna) / 16;
-	 .bloque1{width: @bloque;}
-	 .bloque2{width: @bloque * 2;}
-	 .bloque3{width: @bloque * 3;}
-	 .bloque4{width: @bloque * 4;}
-	 .bloque5{width: @bloque * 5;}
-	 .bloque6{width: @bloque * 6;}
-	 .bloque7{width: @bloque * 7;}
-	 .bloque8{width: @bloque * 8;}
-	 .bloque9{width: @bloque * 9;}
-	.bloque10{width: @bloque * 10;}
-	.bloque11{width: @bloque * 11;}
-	.bloque12{width: @bloque * 12;}
-	.bloque13{width: @bloque * 13;}
-	.bloque14{width: @bloque * 14;}
-	.bloque15{width: @bloque * 15;}
-	.bloque16,
-	.bloque17,
-	.bloque18,
-	.bloque19,
-	.bloque20,
-	.bloque21,
-	.bloque22,
-	.bloque23,
-	.bloque24{width: @bloque * 16;}
+	.b1, .bloque1{width: @bloque;}
+	.b2, .bloque2{width: @bloque * 2;}
+	.b3, .bloque3{width: @bloque * 3;}
+	.b4, .bloque4{width: @bloque * 4;}
+	.b5, .bloque5{width: @bloque * 5;}
+	.b6, .bloque6{width: @bloque * 6;}
+	.b7, .bloque7
+	.b8, .bloque8,
+	.b9, .bloque9,
+	.b10, .bloque10,
+	.b11, .bloque11,
+	.b12, .bloque12,
+	.b13, .bloque13,
+	.b14, .bloque14,
+	.b15, .bloque15{width: @bloque * 7;}
+	.b16, .bloque16,
+	.b17, .bloque17,
+	.b18, .bloque18,
+	.b19, .bloque19,
+	.b20, .bloque20,
+	.b21, .bloque21,
+	.b22, .bloque22,
+	.b23, .bloque23,
+	.b24, .bloque24{width: @bloque * 16;}
+	
+	.total{
+	.col;
+	.col-16;
+	}
+	
+	.mitad{
+		.col;
+		.col-8;
+	}
+	
+	.tercio{
+		.col;
+		.col-5;
+	}
+	
+	.cuarto{
+		.col;
+		.col-5;
+	}
+	
+	.tres-cuartos{
+		.col;
+		.col-11;
+	}
 
 }
 
-/*comentario2*/
+@media (min-width: @tam25) {
+	footer{
+		.col-24;
+	}
+}

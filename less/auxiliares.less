@@ -8,6 +8,11 @@
 	margin:  0 auto
 }
 
+.derecha{
+	float: right;
+	margin-right: 0;
+}
+
 // Grises
 .negro{color: @negro}
 .bg-negro{background-color: @negro}
@@ -61,4 +66,8 @@
 
 .sombra{
 	.box-shadow(fade(@negro, 15%) 0 0 4px);
+}
+
+.sombra-foco{
+	.box-shadow(fade(@azul, 55%) 0 0 4px);
 }

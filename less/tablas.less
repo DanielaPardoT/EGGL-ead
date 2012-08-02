@@ -18,17 +18,22 @@ table{
 		}
 	}
 	th, td{
-		padding: @interColumna /2;
+		padding: @interColumna /3;
 		text-align: left;
 	}
 	
 	th{
 		font-weight: bold;
+		background-color: fade(@blanco, 70%);
 	}
 	
 	td{
+
 		color: fade(@negro, 60%);
 		vertical-align: top;
+		.btn{
+			margin-top: 0;
+		}
 	}
 }
 

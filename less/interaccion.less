@@ -11,15 +11,18 @@
 	.transition(.5s ease all);
 }
 
-.btn
+button.btn,
+input[type="submit"],
+a.btn
  {
 	display: inline-block;
+	margin-top: -4px;
 	cursor: pointer;
 	white-space: nowrap;
-	font-size: @cuerpo * .8;
+	font-size: @cuerpo*.8;
 	
 	padding: 4px 10px 5px 10px;
-	color: fade(@gris-oscuro, 50%);
+	color: fade(@negro, 60%);
 	text-align: center;
 	
 	text-shadow: 1px 1px 0 fade(@blanco, 80%), -1px -1px 0 fade(@negro, 12%);
@@ -36,6 +39,12 @@
 	#gradient > .vertical-three-colors(lighten(@gris-claro, 20%), lighten(@gris-claro, 10%), 50%, lighten(@gris-claro, 5%));
 	.box-shadow(inset fade(@negro, 20%) 0 0 4px);
 	}
+	&.mini{
+		font-size: @cuerpo * .6;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 3px 4px 2px 4px;
+	}
   
 	&.grande{
 		font-size: @cuerpo;
@@ -43,23 +52,108 @@
 		}
 	&.gigante{
 		font-size: @cuerpo;
+		text-transform: uppercase;
+		font-weight: bold;
 		padding: @cuerpo @cuerpo*2;
 	}
 	&.accion{
-		color: fade(@azul-oscuro, 85%);
-		text-shadow: 1px 1px 0 fade(@blanco, 40%), -1px -1px 0 fade(@negro, 12%);
+		color: @blanco;
+		text-shadow: 1px 1px 0 fade(@negro, 40%);
+		border-color: fade(@azul-oscuro, 20%);
 		
 		#gradient > .vertical(@celeste, @azul);
 		.box-shadow(inset fade(@blanco, 40%) 1px 1px 1px);
 		&:hover{
-			color: fade(@blanco, 75%);
-			text-shadow: 1px 1px 0 fade(@negro, 12%);
-			#gradient > .vertical(darken(@celeste, 20%), @azul-oscuro);
+			#gradient > .vertical(darken(@celeste, 10%), darken(@azul, 10%));
+			.box-shadow(inset fade(@negro, 40%) 1px 1px 10px);
+		}
+	
+	}
+	
+	&.alerta{
+		color: @blanco;
+		text-shadow: 1px 1px 0 fade(@negro, 40%);
+		border-color: fade(@rojo-oscuro, 20%);
+		
+		#gradient > .vertical(lighten(@rojo, 35%), @rojo);
+		.box-shadow(inset fade(@blanco, 40%) 1px 1px 1px);
+		&:hover{
+			#gradient > .vertical(@rojo, darken(@rojo, 10%));
 			.box-shadow(inset fade(@negro, 40%) 1px 1px 10px);
 		}
 	
 	}
 }
 
-/*comentario*/
+/* Formularios *///---------------------------------------------------------------------------------------------------
 
+// Reset
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block;
+  height: @interlinea + @cuerpo;
+  padding: 4px;
+  margin-bottom: 9px;
+  font-size: @cuerpo;
+  line-height: @interlinea;
+  color: @gris;
+}
+
+
+
+form{
+	input[type="submit"],
+	.btn{margin-top: @interColumna/2;}
+	
+	label{
+		color: @gris-oscuro;
+		font-weight: bold;
+		font-size: @cuerpo * .75;
+		text-shadow: -1px -1px 1px fade(@blanco, 60%);
+	}
+	
+	input{
+		padding: 4px;
+		color: fade(@azul, 70%);
+		border: none;
+		.border-radius(4px);
+		.sombra;
+		&:focus{
+			.sombra-foco;
+		}
+	}
+	
+	&.vertical{
+		label{
+			display: block;
+			margin: @interlinea 0 5px 5px;
+		}
+	}
+	&.horizontal{
+		label{
+			display: inline-block;
+			width: @bloque * 4;
+			text-align: right;
+		}
+		
+	}
+	input.derecha{margin-right: -6px;}
+	.clearfix;
+	.margen-inferior;
+}
