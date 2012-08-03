@@ -1,0 +1,97 @@
+/* 
+
+		e[ad] - EGGL
+		Taller de Investigaciones Gráficas 2012
+
+		Versátil para 12 columnas
+
+*/
+
+
+@media (min-width: @tam14) and (max-width: @tam18m) {
+
+	 .pag, footer {width: @tam12;}
+	 footer, footer p, footer div address{
+		 line-height: @interlinea * .5;
+	 }
+	 
+	.a1, .col-1{width: @1cols;}
+	.a2, .col-2{width: @2cols;}
+	.a3, .col-3,
+	.a4, .col-4{width: @4cols;}
+	.a5, .col-5,
+	.a6, .col-6{width: @6cols;}
+	.a7, .col-7,
+	.a8, .col-8,
+	.a9, .col-9,
+	.a10, .col-10,
+	.a11, .col-11,
+	.a12, .col-12,
+	.a13, .col-13,
+	.a14, .col-14,
+	.a15, .col-15,
+	.a16, .col-16,
+	.a17, .col-17,
+	.a18, .col-18,
+	.a19, .col-19,
+	.a20, .col-20,
+	.a21, .col-21,
+	.a22, .col-22,
+	.a23, .col-23,
+	.a24, .col-24{width: @12cols;}
+	 
+	 @bloque: (@tam8 + 2*@interColumna) / 8;
+	 .bloque1{width: @bloque;}
+	 .bloque2,
+	 .bloque3{width: @bloque * 2;}
+	 .bloque4,
+	 .bloque5,
+	 .bloque6,
+	 .bloque7{width: @bloque * 4;}
+	 .bloque8,
+	 .bloque9,
+	.bloque10,
+	.bloque11,
+	.bloque12,
+	.bloque13,
+	.bloque14,
+	.bloque15,
+	.bloque16,
+	.bloque17,
+	.bloque18,
+	.bloque19,
+	.bloque20,
+	.bloque21,
+	.bloque22,
+	.bloque23,
+	.bloque24{width: @bloque * 8;}
+	
+	p{
+		font-size: 14px;
+		line-height: 180%;
+	}
+	.total{
+	.col;
+	.col-12;
+	}
+	
+	.mitad{
+		.col;
+		.col-12;
+	}
+	
+	.tercio{
+		.col;
+		.col-6;
+	}
+	
+	.cuarto{
+		.col;
+		.col-12;
+	}
+	
+	.tres-cuartos{
+		.col;
+		.col-12;
+	}
+}

@@ -37,12 +37,20 @@
 @color-link:		@link-color;
 @link-colorHover:	@rojo-oscuro;
 @color-opuesto:		spin(@link-color, 180);
+/* 
+
+		e[ad] - EGGL
+		Taller de Investigaciones Gráficas 2012
+
+		Variables
+
+*/
 
 // Proporciones tipográficas
 @font-size:			16px;					// tamaño base en pixeles
 @cuerpo:			@font-size;
 @em: 				@font-size * 1em;		// atajo para salida en ems, ej. "12/@em"
-@interlinea:        @em * 1.81;
+@interlinea:		@em * 1.81;
 
 
 // Grilla
@@ -81,4 +89,20 @@
 // Ancho del bloque
 
 @bloque:	(@anchoTotal + 2 * @interColumna) / @columnas;
+
+// Resolusiones
+
+@tam8:		 8 * (@columna + @interColumna) - @interColumna ; @tam8m:	@tam8 - 1;
+@tam9:		 9 * (@columna + @interColumna) - @interColumna ; @tam9m:	@tam9 - 1;
+@tam10:		10 * (@columna + @interColumna) - @interColumna ; @tam10m:	@tam10 - 1;
+@tam12:		12 * (@columna + @interColumna) - @interColumna ; @tam12m:	@tam12 - 1;
+@tam13:		13 * (@columna + @interColumna) - @interColumna ; @tam13m:	@tam13 - 1;
+@tam14:		14 * (@columna + @interColumna) - @interColumna ; @tam14m:	@tam14 - 1;
+@tam16:		16 * (@columna + @interColumna) - @interColumna ; @tam16m:	@tam16 - 1;
+@tam17:		17 * (@columna + @interColumna) - @interColumna ; @tam17m:	@tam17 - 1;
+@tam18:		18 * (@columna + @interColumna) - @interColumna ; @tam18m:	@tam18 - 1;
+@tam24:		24 * (@columna + @interColumna) - @interColumna ; @tam24m:	@tam24 - 1;
+@tam25:		25 * (@columna + @interColumna) - @interColumna ; @tam25m:	@tam25 - 1;
+@tam26:		26 * (@columna + @interColumna) - @interColumna ; @tam26m:	@tam26 - 1;
+
 

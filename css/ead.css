@@ -1,6 +1,9 @@
 /* 
 
-e[ad] EGGL Framework 
+		e[ad] - EGGL
+		Taller de Investigaciones Gr�ficas 2012
+
+		Ensamblador del Framework 
 
 */
 /* Reset.less
@@ -220,11 +223,21 @@ body {
 /* Variables.less
  * Variables to customize the look and feel
  * ----------------------------------------------------- */
-/*
+/* 
 
-Funciones
-// taken from twitterbootstrap @github
-mayorly
+		e[ad] - EGGL
+		Taller de Investigaciones Gr�ficas 2012
+
+		Variables
+
+*/
+/* 
+
+		e[ad] - EGGL
+		Taller de Investigaciones Gr�ficas 2012
+
+		Funciones
+		(algunas de ellas tomadas de twitterbootstrap @github)
 
 */
 .clearfix {
@@ -238,9 +251,12 @@ mayorly
 .clearfix:after {
   clear: both;
 }
-/*
+/* 
 
-GRILLA
+		e[ad] - EGGL
+		Taller de Investigaciones Gr�ficas 2012
+
+		Grilla
 
 */
 .pag {
@@ -884,6 +900,14 @@ GRILLA
 .w100 {
   width: 100%;
 }
+/* 
+
+		e[ad] - EGGL
+		Taller de Investigaciones Gr�ficas 2012
+
+		Estilos Auxiliares
+
+*/
 .margen-superior {
   margin-top: 24px;
 }
@@ -1039,457 +1063,12 @@ GRILLA
 }
 /* 
 
-Vers�til 
-Comentario
+		e[ad] - EGGL
+		Taller de Investigaciones Gr�ficas 2012
+
+		Tipograf�a
+
 */
-@media (min-width: 368px) and (max-width: 808px) {
-  .pag,
-  footer {
-    width: 564px;
-  }
-  footer,
-  footer p,
-  footer div address {
-    line-height: 14.48px;
-  }
-  .a1,
-  .col-1 {
-    width: 25px;
-  }
-  .a2,
-  .col-2 {
-    width: 74px;
-  }
-  .a3,
-  .col-3,
-  .a4,
-  .col-4 {
-    width: 172px;
-  }
-  .a5,
-  .col-5,
-  .a6,
-  .col-6 {
-    width: 270px;
-  }
-  .a7,
-  .col-7,
-  .a8,
-  .col-8,
-  .a9,
-  .col-9,
-  .a10,
-  .col-10,
-  .a11,
-  .col-11,
-  .a12,
-  .col-12,
-  .a13,
-  .col-13,
-  .a14,
-  .col-14,
-  .a15,
-  .col-15,
-  .a16,
-  .col-16,
-  .a17,
-  .col-17,
-  .a18,
-  .col-18,
-  .a19,
-  .col-19,
-  .a20,
-  .col-20,
-  .a21,
-  .col-21,
-  .a22,
-  .col-22,
-  .a23,
-  .col-23,
-  .a24,
-  .col-24 {
-    width: 564px;
-  }
-  .bloque1 {
-    width: 52px;
-  }
-  .bloque2,
-  .bloque3 {
-    width: 104px;
-  }
-  .bloque4,
-  .bloque5,
-  .bloque6,
-  .bloque7 {
-    width: 208px;
-  }
-  .bloque8,
-  .bloque9,
-  .bloque10,
-  .bloque11,
-  .bloque12,
-  .bloque13,
-  .bloque14,
-  .bloque15,
-  .bloque16,
-  .bloque17,
-  .bloque18,
-  .bloque19,
-  .bloque20,
-  .bloque21,
-  .bloque22,
-  .bloque23,
-  .bloque24 {
-    width: 416px;
-  }
-  p {
-    font-size: 14px;
-    line-height: 180%;
-  }
-  .total {
-    float: left;
-    margin-left: 24px;
-    background-color: transparent;
-    width: 564px;
-  }
-  .total.ver {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
-  .total.ver p {
-    font-size: 11px;
-    font-weight: bold;
-    padding: 6px;
-  }
-  .mitad {
-    float: left;
-    margin-left: 24px;
-    background-color: transparent;
-    width: 564px;
-  }
-  .mitad.ver {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
-  .mitad.ver p {
-    font-size: 11px;
-    font-weight: bold;
-    padding: 6px;
-  }
-  .tercio {
-    float: left;
-    margin-left: 24px;
-    background-color: transparent;
-    width: 270px;
-  }
-  .tercio.ver {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
-  .tercio.ver p {
-    font-size: 11px;
-    font-weight: bold;
-    padding: 6px;
-  }
-  .cuarto {
-    float: left;
-    margin-left: 24px;
-    background-color: transparent;
-    width: 564px;
-  }
-  .cuarto.ver {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
-  .cuarto.ver p {
-    font-size: 11px;
-    font-weight: bold;
-    padding: 6px;
-  }
-  .tres-cuartos {
-    float: left;
-    margin-left: 24px;
-    background-color: transparent;
-    width: 564px;
-  }
-  .tres-cuartos.ver {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
-  .tres-cuartos.ver p {
-    font-size: 11px;
-    font-weight: bold;
-    padding: 6px;
-  }
-}
-@media (min-width: 809px) and (max-width: 1201px) {
-  .pag,
-  footer {
-    width: 760px;
-  }
-  footer,
-  footer p,
-  footer div address {
-    line-height: 18.824px;
-  }
-  p {
-    font-size: 14px;
-    line-height: 180%;
-  }
-  .a1,
-  .col-1 {
-    width: 25px;
-  }
-  .a2,
-  .col-2 {
-    width: 74px;
-  }
-  .a3,
-  .col-3 {
-    width: 123px;
-  }
-  .a4,
-  .col-4 {
-    width: 172px;
-  }
-  .a5,
-  .col-5 {
-    width: 221px;
-  }
-  .a6,
-  .col-6 {
-    width: 270px;
-  }
-  .a7,
-  .col-7 {
-    width: 319px;
-  }
-  .a8,
-  .col-8 {
-    width: 368px;
-  }
-  .a9,
-  .col-9 {
-    width: 417px;
-  }
-  .a10,
-  .col-10 {
-    width: 466px;
-  }
-  .a11,
-  .col-11 {
-    width: 515px;
-  }
-  .a12,
-  .col-12 {
-    width: 564px;
-  }
-  .a13,
-  .col-13 {
-    width: 613px;
-  }
-  .a14,
-  .col-14 {
-    width: 662px;
-  }
-  .a15,
-  .col-15 {
-    width: 711px;
-  }
-  .a16,
-  .col-16,
-  .a17,
-  .col-17,
-  .a18,
-  .col-18,
-  .a19,
-  .col-19,
-  .a20,
-  .col-20,
-  .a21,
-  .col-21,
-  .a22,
-  .col-22,
-  .a23,
-  .col-23,
-  .a24,
-  .col-24 {
-    width: 760px;
-  }
-  .b1,
-  .bloque1 {
-    width: 50.5px;
-  }
-  .b2,
-  .bloque2 {
-    width: 101px;
-  }
-  .b3,
-  .bloque3 {
-    width: 151.5px;
-  }
-  .b4,
-  .bloque4 {
-    width: 202px;
-  }
-  .b5,
-  .bloque5 {
-    width: 252.5px;
-  }
-  .b6,
-  .bloque6 {
-    width: 303px;
-  }
-  .b7,
-  .bloque7.b8,
-  .bloque8,
-  .b9,
-  .bloque9,
-  .b10,
-  .bloque10,
-  .b11,
-  .bloque11,
-  .b12,
-  .bloque12,
-  .b13,
-  .bloque13,
-  .b14,
-  .bloque14,
-  .b15,
-  .bloque15 {
-    width: 353.5px;
-  }
-  .b16,
-  .bloque16,
-  .b17,
-  .bloque17,
-  .b18,
-  .bloque18,
-  .b19,
-  .bloque19,
-  .b20,
-  .bloque20,
-  .b21,
-  .bloque21,
-  .b22,
-  .bloque22,
-  .b23,
-  .bloque23,
-  .b24,
-  .bloque24 {
-    width: 808px;
-  }
-  .total {
-    float: left;
-    margin-left: 24px;
-    background-color: transparent;
-    width: 760px;
-  }
-  .total.ver {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
-  .total.ver p {
-    font-size: 11px;
-    font-weight: bold;
-    padding: 6px;
-  }
-  .mitad {
-    float: left;
-    margin-left: 24px;
-    background-color: transparent;
-    width: 368px;
-  }
-  .mitad.ver {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
-  .mitad.ver p {
-    font-size: 11px;
-    font-weight: bold;
-    padding: 6px;
-  }
-  .tercio {
-    float: left;
-    margin-left: 24px;
-    background-color: transparent;
-    width: 221px;
-  }
-  .tercio.ver {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
-  .tercio.ver p {
-    font-size: 11px;
-    font-weight: bold;
-    padding: 6px;
-  }
-  .cuarto {
-    float: left;
-    margin-left: 24px;
-    background-color: transparent;
-    width: 221px;
-  }
-  .cuarto.ver {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
-  .cuarto.ver p {
-    font-size: 11px;
-    font-weight: bold;
-    padding: 6px;
-  }
-  .tres-cuartos {
-    float: left;
-    margin-left: 24px;
-    background-color: transparent;
-    width: 515px;
-  }
-  .tres-cuartos.ver {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
-  .tres-cuartos.ver p {
-    font-size: 11px;
-    font-weight: bold;
-    padding: 6px;
-  }
-}
-@media (min-width: 1201px) {
-  footer {
-    width: 1152px;
-  }
-}
 * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1760,11 +1339,12 @@ pre {
   border-radius: 0.2em;
   margin: 1em 0;
 }
-/*
+/* 
 
+		e[ad] - EGGL
+		Taller de Investigaciones Gr�ficas 2012
 
- Patrones
-
+		Patrones
 
 */
 .pizarra {
@@ -2096,11 +1676,14 @@ form:after {
 form:after {
   clear: both;
 }
-/**
+/* 
 
-TABLAS
+		e[ad] - EGGL
+		Taller de Investigaciones Gr�ficas 2012
 
-**/
+		Tablas
+
+*/
 table {
   border-collapse: collapse;
   border-left: 1px solid #d9d9d9;
@@ -2127,4 +1710,665 @@ table td {
 }
 table td .btn {
   margin-top: 0;
+}
+/* 
+
+		e[ad] - EGGL
+		Taller de Investigaciones Gr�ficas 2012
+
+		Vers�til para 8 columnas
+
+*/
+@media (min-width: 0px) and (max-width: 661px) {
+  body {
+    overflow: scroll;
+  }
+  .pag,
+  footer {
+    width: 368px;
+  }
+  footer,
+  footer p,
+  footer div address {
+    line-height: 14.48px;
+  }
+  .a1,
+  .col-1,
+  .a2,
+  .col-2 {
+    width: 74px;
+  }
+  .a3,
+  .col-3,
+  .a4,
+  .col-4 {
+    width: 172px;
+  }
+  .a5,
+  .col-5,
+  .a6,
+  .col-6,
+  .a7,
+  .col-7,
+  .a8,
+  .col-8,
+  .a9,
+  .col-9,
+  .a10,
+  .col-10,
+  .a11,
+  .col-11,
+  .a12,
+  .col-12,
+  .a13,
+  .col-13,
+  .a14,
+  .col-14,
+  .a15,
+  .col-15,
+  .a16,
+  .col-16,
+  .a17,
+  .col-17,
+  .a18,
+  .col-18,
+  .a19,
+  .col-19,
+  .a20,
+  .col-20,
+  .a21,
+  .col-21,
+  .a22,
+  .col-22,
+  .a23,
+  .col-23,
+  .a24,
+  .col-24 {
+    width: 368px;
+  }
+  .bloque1 {
+    width: 52px;
+  }
+  .bloque2,
+  .bloque3 {
+    width: 104px;
+  }
+  .bloque4,
+  .bloque5,
+  .bloque6,
+  .bloque7 {
+    width: 208px;
+  }
+  .bloque8,
+  .bloque9,
+  .bloque10,
+  .bloque11,
+  .bloque12,
+  .bloque13,
+  .bloque14,
+  .bloque15,
+  .bloque16,
+  .bloque17,
+  .bloque18,
+  .bloque19,
+  .bloque20,
+  .bloque21,
+  .bloque22,
+  .bloque23,
+  .bloque24 {
+    width: 416px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 180%;
+  }
+  .total {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 368px;
+  }
+  .total.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .total.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .mitad {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 368px;
+  }
+  .mitad.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .mitad.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .tercio {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 368px;
+  }
+  .tercio.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .tercio.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .cuarto {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 368px;
+  }
+  .cuarto.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .cuarto.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .tres-cuartos {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 368px;
+  }
+  .tres-cuartos.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .tres-cuartos.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+}
+/* 
+
+		e[ad] - EGGL
+		Taller de Investigaciones Gr�ficas 2012
+
+		Vers�til para 12 columnas
+
+*/
+@media (min-width: 662px) and (max-width: 857px) {
+  .pag,
+  footer {
+    width: 564px;
+  }
+  footer,
+  footer p,
+  footer div address {
+    line-height: 14.48px;
+  }
+  .a1,
+  .col-1 {
+    width: 25px;
+  }
+  .a2,
+  .col-2 {
+    width: 74px;
+  }
+  .a3,
+  .col-3,
+  .a4,
+  .col-4 {
+    width: 172px;
+  }
+  .a5,
+  .col-5,
+  .a6,
+  .col-6 {
+    width: 270px;
+  }
+  .a7,
+  .col-7,
+  .a8,
+  .col-8,
+  .a9,
+  .col-9,
+  .a10,
+  .col-10,
+  .a11,
+  .col-11,
+  .a12,
+  .col-12,
+  .a13,
+  .col-13,
+  .a14,
+  .col-14,
+  .a15,
+  .col-15,
+  .a16,
+  .col-16,
+  .a17,
+  .col-17,
+  .a18,
+  .col-18,
+  .a19,
+  .col-19,
+  .a20,
+  .col-20,
+  .a21,
+  .col-21,
+  .a22,
+  .col-22,
+  .a23,
+  .col-23,
+  .a24,
+  .col-24 {
+    width: 564px;
+  }
+  .bloque1 {
+    width: 52px;
+  }
+  .bloque2,
+  .bloque3 {
+    width: 104px;
+  }
+  .bloque4,
+  .bloque5,
+  .bloque6,
+  .bloque7 {
+    width: 208px;
+  }
+  .bloque8,
+  .bloque9,
+  .bloque10,
+  .bloque11,
+  .bloque12,
+  .bloque13,
+  .bloque14,
+  .bloque15,
+  .bloque16,
+  .bloque17,
+  .bloque18,
+  .bloque19,
+  .bloque20,
+  .bloque21,
+  .bloque22,
+  .bloque23,
+  .bloque24 {
+    width: 416px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 180%;
+  }
+  .total {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 564px;
+  }
+  .total.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .total.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .mitad {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 564px;
+  }
+  .mitad.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .mitad.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .tercio {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 270px;
+  }
+  .tercio.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .tercio.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .cuarto {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 564px;
+  }
+  .cuarto.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .cuarto.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .tres-cuartos {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 564px;
+  }
+  .tres-cuartos.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .tres-cuartos.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+}
+/* 
+
+		e[ad] - EGGL
+		Taller de Investigaciones Gr�ficas 2012
+
+		Vers�til para 16 columnas
+
+*/
+@media (min-width: 858px) and (max-width: 1250px) {
+  .pag,
+  footer {
+    width: 760px;
+  }
+  footer,
+  footer p,
+  footer div address {
+    line-height: 18.824px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 180%;
+  }
+  .a1,
+  .col-1 {
+    width: 25px;
+  }
+  .a2,
+  .col-2 {
+    width: 74px;
+  }
+  .a3,
+  .col-3 {
+    width: 123px;
+  }
+  .a4,
+  .col-4 {
+    width: 172px;
+  }
+  .a5,
+  .col-5 {
+    width: 221px;
+  }
+  .a6,
+  .col-6 {
+    width: 270px;
+  }
+  .a7,
+  .col-7 {
+    width: 319px;
+  }
+  .a8,
+  .col-8 {
+    width: 368px;
+  }
+  .a9,
+  .col-9 {
+    width: 417px;
+  }
+  .a10,
+  .col-10 {
+    width: 466px;
+  }
+  .a11,
+  .col-11 {
+    width: 515px;
+  }
+  .a12,
+  .col-12 {
+    width: 564px;
+  }
+  .a13,
+  .col-13 {
+    width: 613px;
+  }
+  .a14,
+  .col-14 {
+    width: 662px;
+  }
+  .a15,
+  .col-15 {
+    width: 711px;
+  }
+  .a16,
+  .col-16,
+  .a17,
+  .col-17,
+  .a18,
+  .col-18,
+  .a19,
+  .col-19,
+  .a20,
+  .col-20,
+  .a21,
+  .col-21,
+  .a22,
+  .col-22,
+  .a23,
+  .col-23,
+  .a24,
+  .col-24 {
+    width: 760px;
+  }
+  .b1,
+  .bloque1 {
+    width: 50.5px;
+  }
+  .b2,
+  .bloque2 {
+    width: 101px;
+  }
+  .b3,
+  .bloque3 {
+    width: 151.5px;
+  }
+  .b4,
+  .bloque4 {
+    width: 202px;
+  }
+  .b5,
+  .bloque5 {
+    width: 252.5px;
+  }
+  .b6,
+  .bloque6 {
+    width: 303px;
+  }
+  .b7,
+  .bloque7.b8,
+  .bloque8,
+  .b9,
+  .bloque9,
+  .b10,
+  .bloque10,
+  .b11,
+  .bloque11,
+  .b12,
+  .bloque12,
+  .b13,
+  .bloque13,
+  .b14,
+  .bloque14,
+  .b15,
+  .bloque15 {
+    width: 353.5px;
+  }
+  .b16,
+  .bloque16,
+  .b17,
+  .bloque17,
+  .b18,
+  .bloque18,
+  .b19,
+  .bloque19,
+  .b20,
+  .bloque20,
+  .b21,
+  .bloque21,
+  .b22,
+  .bloque22,
+  .b23,
+  .bloque23,
+  .b24,
+  .bloque24 {
+    width: 808px;
+  }
+  .total {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 760px;
+  }
+  .total.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .total.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .mitad {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 368px;
+  }
+  .mitad.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .mitad.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .tercio {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 221px;
+  }
+  .tercio.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .tercio.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .cuarto {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 221px;
+  }
+  .cuarto.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .cuarto.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  .tres-cuartos {
+    float: left;
+    margin-left: 24px;
+    background-color: transparent;
+    width: 515px;
+  }
+  .tres-cuartos.ver {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .tres-cuartos.ver p {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px;
+  }
 }
