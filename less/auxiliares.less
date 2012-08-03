@@ -7,10 +7,39 @@
 
 */
 
+// Estilos tipográficos auxiliares
+
+.grande{
+	font-size: 250%;
+}
+.gigante{
+	font-size: 500%;
+}
+.chico, .chica{
+	font-size: 80%;
+}
+.color{
+	color: @link-color;
+}
+.uc{
+	text-transform: uppercase;
+}
+.fina, .fino{
+	font-weight: 100;
+	letter-spacing: .03ex; 
+}
+.normal{
+	font-weight: normal;
+}
+	
+
+// Márgenes de ajuste
+
 .margen-superior{margin-top: @interColumna}
 .margen-superior-negativo{margin-top: -@interColumna}
 .margen-inferior{margin-bottom: @interColumna}
 .margen-inferior-negativo{margin-bottom: -@interColumna}
+.interno{margin-left: 0} // para no acumular márgenes (@interColumna) en columnas anidadas.
 
 .centrada, .centrado{
 	text-align: center;
@@ -23,6 +52,7 @@
 }
 
 // Grises
+
 .negro{color: @negro}
 .bg-negro{background-color: @negro}
 .gris-oscuro{color: @gris-oscuro}
@@ -47,7 +77,7 @@
 .bg-verde-oscuro{background-color: @verde-oscuro}
 .verde-claro{color: @verde-claro}
 .bg-verde-claro{background-color: @verde-claro}
-.rojo{color: @rojo}
+.roja, .rojo{color: @rojo}
 .bg-rojo{background-color: @rojo}
 .rojo-oscuro{color: @rojo-oscuro}
 .bg-rojo-oscuro{background-color: @rojo-oscuro}
@@ -56,7 +86,7 @@
 .amarillo{color: @amarillo}
 .bg-amarillo{background-color: @amarillo}
 
-// Especiales
+// Colores Especiales
 .pizarra{color: @pizarra}
 .bg-pizarra{background-color: @pizarra}
 .ahuesado{color: @ahuesado}
@@ -66,6 +96,7 @@
 .color-opuesto{color: @color-opuesto}
 .bg-color-opuesto{background-color: @color-opuesto}
 
+
 .caja{
 	display: inline-block;
 	.border-radius(5px);
@@ -73,10 +104,16 @@
 	height: @interColumna;
 }
 
+// Estilos auxiliares
 .sombra{
 	.box-shadow(fade(@negro, 15%) 0 0 4px);
 }
 
 .sombra-foco{
 	.box-shadow(fade(@azul, 55%) 0 0 4px);
+}
+
+.fulgor{
+	background-color: @blanco;
+	.box-shadow(0 0 10px @blanco);
 }

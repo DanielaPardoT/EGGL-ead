@@ -228,14 +228,6 @@ body {
 		e[ad] - EGGL
 		Taller de Investigaciones Gr�ficas 2012
 
-		Variables
-
-*/
-/* 
-
-		e[ad] - EGGL
-		Taller de Investigaciones Gr�ficas 2012
-
 		Funciones
 		(algunas de ellas tomadas de twitterbootstrap @github)
 
@@ -528,20 +520,23 @@ body {
   font-weight: bold;
   padding: 6px;
 }
-.mitad {
+.mitad,
+.medio {
   float: left;
   margin-left: 24px;
   background-color: transparent;
   width: 564px;
 }
-.mitad.ver {
+.mitad.ver,
+.medio.ver {
   color: rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0.05);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.mitad.ver p {
+.mitad.ver p,
+.medio.ver p {
   font-size: 11px;
   font-weight: bold;
   padding: 6px;
@@ -560,6 +555,24 @@ body {
   border-radius: 3px;
 }
 .tercio.ver p {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 6px;
+}
+.dos-tercios {
+  float: left;
+  margin-left: 24px;
+  background-color: transparent;
+  width: 760px;
+}
+.dos-tercios.ver {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.dos-tercios.ver p {
   font-size: 11px;
   font-weight: bold;
   padding: 6px;
@@ -908,6 +921,30 @@ body {
 		Estilos Auxiliares
 
 */
+.grande {
+  font-size: 250%;
+}
+.gigante {
+  font-size: 500%;
+}
+.chico,
+.chica {
+  font-size: 80%;
+}
+.color {
+  color: #aa0000;
+}
+.uc {
+  text-transform: uppercase;
+}
+.fina,
+.fino {
+  font-weight: 100;
+  letter-spacing: .03ex;
+}
+.normal {
+  font-weight: normal;
+}
 .margen-superior {
   margin-top: 24px;
 }
@@ -919,6 +956,9 @@ body {
 }
 .margen-inferior-negativo {
   margin-bottom: -24px;
+}
+.interno {
+  margin-left: 0;
 }
 .centrada,
 .centrado {
@@ -995,6 +1035,7 @@ body {
 .bg-verde-claro {
   background-color: rgba(231, 248, 197, 0.95);
 }
+.roja,
 .rojo {
   color: #aa0000;
 }
@@ -1061,6 +1102,12 @@ body {
   -moz-box-shadow: rgba(30, 105, 180, 0.55) 0 0 4px;
   box-shadow: rgba(30, 105, 180, 0.55) 0 0 4px;
 }
+.fulgor {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px #ffffff;
+  -moz-box-shadow: 0 0 10px #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+}
 /* 
 
 		e[ad] - EGGL
@@ -1071,27 +1118,6 @@ body {
 */
 * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.grande {
-  font-size: 250%;
-}
-.gigante {
-  font-size: 500%;
-}
-.chico,
-.chica {
-  font-size: 80%;
-}
-.color {
-  color: #aa0000;
-}
-.uc {
-  text-transform: uppercase;
-}
-.fina,
-.fino {
-  font-weight: 100;
-  letter-spacing: .03ex;
 }
 body {
   background-color: #e6e6e6;
@@ -1339,6 +1365,9 @@ pre {
   border-radius: 0.2em;
   margin: 1em 0;
 }
+.estracto {
+  font-size: 80%;
+}
 /* 
 
 		e[ad] - EGGL
@@ -1347,6 +1376,39 @@ pre {
 		Patrones
 
 */
+header .iso {
+  margin: 0 0 0 24px;
+}
+header .iso h1 {
+  color: #aa0000;
+  font-size: 18px;
+}
+header .iso h2 {
+  margin-top: -24px;
+  color: #808080;
+  font-weight: 100;
+  letter-spacing: .03ex;
+  font-size: 18.5px;
+}
+ul.meta {
+  top: 0;
+  vertical-align: top;
+  text-align: right;
+  font-size: 10px;
+  margin: -24px 0 12px 0;
+  padding: 0 20px;
+}
+ul.meta li {
+  display: inline;
+  border-right: 1px solid #d9d9d9;
+  padding: 0 10px;
+}
+ul.meta li:last-of-type {
+  border: none;
+}
+ul.meta li a {
+  font-weight: bold;
+}
 .pizarra {
   background-color: #323c46;
   color: rgba(255, 255, 255, 0.8);
@@ -1470,7 +1532,7 @@ a.btn {
   cursor: pointer;
   white-space: nowrap;
   font-size: 12.8px;
-  padding: 4px 10px 5px 10px;
+  padding: 6px 10px;
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8), -1px -1px 0 rgba(0, 0, 0, 0.12);
@@ -1512,10 +1574,10 @@ a.btn:hover {
 button.btn.mini,
 input[type="submit"].mini,
 a.btn.mini {
-  font-size: 9.6px;
+  font-size: 8.8px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 3px 4px 2px 4px;
+  padding: 3px 4px;
 }
 button.btn.grande,
 input[type="submit"].grande,
@@ -1601,6 +1663,16 @@ a.btn.alerta:hover {
   -moz-box-shadow: inset rgba(0, 0, 0, 0.4) 1px 1px 10px;
   box-shadow: inset rgba(0, 0, 0, 0.4) 1px 1px 10px;
 }
+.pegado-antes {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.pegado-despues {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
 /* Formularios */select,
 textarea,
 input[type="text"],
@@ -1655,6 +1727,20 @@ form input:focus {
   -webkit-box-shadow: rgba(30, 105, 180, 0.55) 0 0 4px;
   -moz-box-shadow: rgba(30, 105, 180, 0.55) 0 0 4px;
   box-shadow: rgba(30, 105, 180, 0.55) 0 0 4px;
+}
+form.buscador {
+  text-align: right;
+}
+form.buscador input.texto {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+form.buscador input[type=submit] {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  margin: -4px 0 0 -4px;
 }
 form.vertical label {
   display: block;

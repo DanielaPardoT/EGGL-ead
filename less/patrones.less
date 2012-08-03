@@ -7,6 +7,44 @@
 
 */
 
+header .iso{
+	margin: 0 0 0 @interColumna;
+
+	h1{
+		.rojo;
+		font-size: 18px;
+	}
+
+	h2{
+		.margen-superior-negativo;
+		.gris;
+		.fino;
+		font-size: 18.5px;
+	}
+}
+
+ul.meta{
+
+	top: 0;
+	vertical-align: top;
+	text-align: right;
+	font-size: 10px;
+	margin: -@interColumna 0 @interColumna/2 0;
+	padding: 0 20px;
+	
+	li{
+		display: inline;
+		border-right: 1px solid @borde;
+		padding: 0 10px;
+		&:last-of-type{
+			border: none;
+		}
+			a{
+				font-weight: bold;
+			}
+	}
+}
+
 .pizarra{
 	background-color: @pizarra;
 	color: fade(@blanco, 80%);

@@ -14,10 +14,19 @@
 	<div class="pag">
 		<header>
 			<div class="fila">
-				<div class="mitad"><h1 class="rojo fina gigante">EGGL: e[ad] Global Graphic Language</h1></div>
+				<div class="iso mitad">
+					<h1>e[ad] Escuela de Arquitectura y Diseño</h1>
+					<h2>Pontificia Universidad Católica de Valparaíso</h2>
+				</div>
 				<div class="mitad">
-					<p class="grande fino">Documentación del lenguaje gráfico para todos los sitios y servicios de la e[ad] Escuela de Arquitectura y Diseño de la Pontificia Universidad Católica de Valparaíso</p>
-					<p>Proyecto de código libre disponible en <a class="btn" href="https://github.com/hspencer/EGGL-ead" title="EGGL en Github">Github</a></p>
+					<ul class="meta">
+						<li><a href="#">Inicia Sesión</a></li>
+						<li><a href="#">Regístrate</a></li>
+					</ul>
+					<form class="buscador">
+						<input class="texto"/>
+						<input type="submit" value="Buscar" />
+					</form>
 				</div>
 			</div>
 		</header>
@@ -32,168 +41,48 @@
 				<li><a href="versatilidad.html">Versatilidad</a></li>
 			</ul>
 		</nav>
-		<h3 class="filete">Contenidos</h3>
-		<div class="tdc">
-			<dl>
-				<dt>Grilla</dt>
-				<dt>Jerarquías tipográficas</dt>
-				<dt>Elementos de interacción</dt>
-			</dl>
-		</div>
-		<h2 class="filete">Grilla</h2>
-		<p>La estructura para definir la geometría de la pantalla se basa en un sistema de filas y columnas, con un ancho máximo de 17 columnas en total:</p>
-		<code class="a12 margen-inferior">
-		&lt;div class=&quot;fila&quot;&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;01 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;	
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;02 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;03 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;04 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;05 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;06 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;07 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;08 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;09 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;10 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;11 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;12 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;13 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;14 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;15 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;16 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-			&lt;div class=&quot;col1 ver&quot;&gt;&lt;p&gt;17 &lt;code&gt;col1&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
-		&lt;/div&gt;
-		</code>
-		<div class="fila margen-inferior">
-			<div class="col1 ver"><p>01</p></div>
-			<div class="col1 ver"><p>02</p></div>
-			<div class="col1 ver"><p>03</p></div>
-			<div class="col1 ver"><p>04</p></div>
-			<div class="col1 ver"><p>05</p></div>
-			<div class="col1 ver"><p>06</p></div>
-			<div class="col1 ver"><p>07</p></div>
-			<div class="col1 ver"><p>08</p></div>
-			<div class="col1 ver"><p>09</p></div>
-			<div class="col1 ver"><p>10</p></div>
-			<div class="col1 ver"><p>11</p></div>
-			<div class="col1 ver"><p>12</p></div>
-			<div class="col1 ver"><p>13</p></div>
-			<div class="col1 ver"><p>14</p></div>
-			<div class="col1 ver"><p>15</p></div>
-			<div class="col1 ver"><p>16</p></div>
-			<div class="col1 ver"><p>17</p></div>
-			<div class="col1 ver"><p>18</p></div>
-			<div class="col1 ver"><p>19</p></div>
-			<div class="col1 ver"><p>20</p></div>
-			<div class="col1 ver"><p>21</p></div>
-			<div class="col1 ver"><p>22</p></div>
-			<div class="col1 ver"><p>23</p></div>
-			<div class="col1 ver"><p>24</p></div>
-		</div>
-		<div class="fila margen-inferior">
-			<div class="col7 ver"><p>01 <code>col7</code></p></div>
-			<div class="col3 ver"><p>02 <code>col3</code></p></div>
-			<div class="col2 ver"><p>03 <code>col2</code></p></div>
-			<div class="col2 ver"><p>04 <code>col2</code></p></div>
-			<div class="col3 ver"><p>05 <code>col3</code></p></div>
-			<div class="col7 ver"><p>06 <code>col7</code></p></div>
-		</div>
-		<h3 class="filete">Bloques</h3>
 		<div class="fila">
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-			<div class="bloque1 ver"><p></p></div>
-		</div>
-		<div class="fila">
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p><code>bloque2</code></p></div>
-		</div>
-		<div class="fila margen-inferior">
-			<div class="bloque3 ver"><p><code>bloque3</code></p></div>
-			<div class="bloque3 ver"><p><code>bloque3</code></p></div>
-			<div class="bloque3 ver"><p><code>bloque3</code></p></div>
-			<div class="bloque3 ver"><p><code>bloque3</code></p></div>
-			<div class="bloque3 ver"><p><code>bloque3</code></p></div>
-			<div class="bloque3 ver"><p><code>bloque3</code></p></div>
-			<div class="bloque3 ver"><p><code>bloque3</code></p></div>
-			<div class="bloque3 ver"><p><code>bloque3</code></p></div>
-		</div>
-		<h2 class="filete">Tipografía</h2>
-		<div class="fila">
-			<div class="mitad">
-				<h1>Encabezado de Primer Nivel</h1>
-				<h2>Encabezado de Segundo Nivel</h2>
-				<h3>Encabezado de Tercer Nivel</h3>
-				<h4>Encabezado de Cuarto Nivel</h4>
-				<h5>Encabezado de Quinto Nivel</h5>
-				<h6>Encabezado de Sexto Nivel</h6>
+			<div class="dos-tercios">
+				<div class="w100 gris-claro">
+					<h3>Artículo destacado más reciente</h3>
+					<p class="estracto">
+						Estracto del artículo que menciona aspectos más relevantes para invitar a leer en detalle. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+					</p>
+					<div class="tercio interno">
+						<h4>Otro artículo reciente</h4>
+						<p class="estracto">
+						No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+						</p>
+						
+						<h4>Tercera noticia</h4>
+						<p class="estracto">
+						Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad.
+						</p>
+						
+						<h4>Cuarto artículo mucho menos reciente</h4>
+						<p class="estracto">
+						Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto.
+						</p>
+					</div>
+					<div class="tercio">
+						<h4>Otro artículo reciente</h4>
+						<p class="estracto">
+						Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+						</p>
+						
+						<h4>Tercera noticia</h4>
+						<p class="estracto">
+						Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad.
+						</p>
+						
+						<h4>Cuarto artículo mucho menos reciente</h4>
+						<p class="estracto">
+						Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto.
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="mitad">
-				<p><strong>Lorem Ipsum</strong> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el <em>texto de relleno estándar de las industrias desde el año 1500</em>, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas <a href="http://en.wikipedia.org/wiki/Letraset">"Letraset"</a>, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-			</div>
-		</div>
-		
-		<table class="w100">
-			<tr>
-				<th class="w20">Elemento</th>
-				<th class="w30">Código</th>
-				<th class="w50">Uso</th>
-			</tr>
-			
-			<tr>
-				<td><a class="btn">botón</a></td>
-				<td><code>&lt;a class=&quot;btn&quot;&gt;bot&oacute;n&lt;/a&gt;</code></td>
-				<td>botón de uso general</td>
-			</tr>
-			<tr>
-				<td><a class="btn grande">botón</a></td>
-				<td><code>&lt;a class=&quot;btn grande&quot;&gt;bot&oacute;n&lt;/a&gt;</code></td>
-				<td>botón grande para usos extraordinarios</td>
-			</tr>
-		</table>
-	</div>
-	
-	<div class="pag margen-superior">
-		<div class="fila">
-			<div class="col16">
-				<h5 class="especial">Cabecera #5</h5>
-				<p><strong>Lorem Ipsum</strong> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el <em>texto de relleno estándar de las industrias desde el año 1500</em>, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas <a href="http://en.wikipedia.org/wiki/Letraset">"Letraset"</a>, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-			</div>
-			
-			<div class="col8">
-				<h5>Real:Time</h5e>
-				<p class="chico margen-superior">
-					<strong>Lorem Ipsum</strong> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el <em>texto de relleno estándar de las industrias desde el año 1500</em>, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+			<div class="tercio">
 			</div>
 		</div>
 	</div>

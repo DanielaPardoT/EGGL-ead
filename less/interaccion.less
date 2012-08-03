@@ -11,6 +11,8 @@
 	.transition(.5s ease all);
 }
 
+@radio:	3px;	// esquina redondeada de botones
+
 button.btn,
 input[type="submit"],
 a.btn
@@ -20,18 +22,15 @@ a.btn
 	cursor: pointer;
 	white-space: nowrap;
 	font-size: @cuerpo*.8;
-	
-	padding: 4px 10px 5px 10px;
+	padding: 6px 10px;
 	color: fade(@negro, 60%);
 	text-align: center;
-	
 	text-shadow: 1px 1px 0 fade(@blanco, 80%), -1px -1px 0 fade(@negro, 12%);
-	
 	vertical-align: middle;
 	#gradient > .vertical-three-colors(lighten(@gris-claro, 22%), lighten(@gris-claro, 14%), 80%, lighten(@gris-claro, 8%));
 	border: 1px solid @borde;
 
-	.border-radius(3px);
+	.border-radius(@radio);
 	.box-shadow(inset fade(@blanco, 80%) 1px 1px 1px);
 	
 	&:hover {
@@ -40,10 +39,10 @@ a.btn
 	.box-shadow(inset fade(@negro, 20%) 0 0 4px);
 	}
 	&.mini{
-		font-size: @cuerpo * .6;
+		font-size: @cuerpo * .55;
 		text-transform: uppercase;
 		font-weight: bold;
-		padding: 3px 4px 2px 4px;
+		padding: 3px 4px;
 	}
   
 	&.grande{
@@ -84,6 +83,10 @@ a.btn
 	
 	}
 }
+
+
+.pegado-antes{.border-radius(@radio 0 0 @radio)}
+.pegado-despues{.border-radius(0 @radio @radio 0)}
 
 /* Formularios *///---------------------------------------------------------------------------------------------------
 
@@ -138,6 +141,17 @@ form{
 			.sombra-foco;
 		}
 	}
+	&.buscador{
+		text-align: right;
+		input.texto{
+			.pegado-antes;
+			}
+		input[type=submit]{
+			.pegado-despues;
+			margin: -4px 0 0 -4px;
+			}
+				
+		}
 	
 	&.vertical{
 		label{

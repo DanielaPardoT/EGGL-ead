@@ -10,26 +10,6 @@
 	font-family: @tipografia;
 }
 
-.grande{
-	font-size: 250%;
-}
-.gigante{
-	font-size: 500%;
-}
-.chico, .chica{
-	font-size: 80%;
-}
-.color{
-	color: @link-color;
-}
-.uc{
-	text-transform: uppercase;
-}
-.fina, .fino{
-	font-weight: 100;
-	letter-spacing: .03ex; 
-}
-	
 	
 body{
 	#gradient > .striped(lighten(@gris-claro, 15%), -45deg);
@@ -248,4 +228,12 @@ pre {
 	background-color: @ahuesado;
 	.border-radius(1em / 5);
 	margin: 1em 0;
+}
+
+
+//------------------------------------------------------Estilos Semánticos
+
+
+.estracto{
+	.chico;
 }
