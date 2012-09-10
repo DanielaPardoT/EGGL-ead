@@ -13,103 +13,219 @@
         <link rel="stylesheet" href="css/ead.css" type="text/css" media="all">
     </head>
     <body lang="ES_es">
-        <div class="pag">
-            <header>
-                <div class="fila">
-                    <div class="mitad">
-                        <h1 class="rojo fina gigante">
-                            EGGL: e[ad] Global Graphic Language
-                        </h1>
-                    </div>
-                    <div class="mitad">
-                        <p class="grande fino">
-                            Documentación del lenguaje gráfico para todos los sitios y servicios de la e[ad] Escuela de Arquitectura y Diseño de la Pontificia Universidad Católica de Valparaíso
-                        </p>
-                        <p>
-                            Proyecto de código libre disponible en <a class="btn" href="https://github.com/hspencer/EGGL-ead" title="EGGL en Github">Github</a>
-                        </p>
-                    </div>
-                </div>
-            </header>
-            <nav class="margen-inferior">
-                <ul>
-                    <li>
-                        <a href="index.html">¶</a>
-                    </li>
-                    <li>
-                        <a href="tipografia.html">Tipografía</a>
-                    </li>
-                    <li>
-                        <a href="grilla.html">Grilla</a>
-                    </li>
-                    <li>
-                        <a href="interaccion.html">Interacción</a>
-                    </li>
-                    <li>
-                        <a href="color.html">Color</a>
-                    </li>
-                    <li>
-                        <a href="versatilidad.html">Versatilidad</a>
-                    </li>
-                </ul>
-            </nav>
+	
+	<div class="pag inter-pag sombra-pag">	
+	    <header>
+		<div class="fila">
+		    <div class="col-8">
+			<h1 class="logo espaciado">Diseño Visual <strong class="medium">Sitio e[ad]</strong></h1>
+		    </div>
+		    	<div class="col-8">
+		    	<p class="grande fino">Documentación del lenguaje gráfico para todos los sitios y servicios de la e[ad] Escuela de Arquitectura y Diseño de la Pontificia Universidad Católica de Valparaíso</p>
+			<h6 class="margin-bot-10"><strong class="medium">Proyecto de código libre disponible en </strong></h6>
+			<a class="btn accion" href="https://github.com/DanielaPardoT/EGGL-ead/tree/patch-1" title="EGGL en Github">Github</a>
+			</div>
+		</div>	
+	    </header>
+		
+	    <nav class="margen-inferior">
+		<ul>
+		    <li><a href="index.html">Inicio</a></li>
+		    <li><a href="tipografia.html">Tipografía</a></li>
+		    <li><a href="grilla.html">Grilla</a></li>
+		    <li><a href="interaccion.html">Interacción</a></li>
+		    <li><a href="color.html">Color</a></li>
+		    <li><a href="versatilidad.html">Versatilidad</a></li>
+		</ul>
+	    </nav>
+		
+	    <div class="fila">
+		<h2 class="margin-left">Menú Navegador</h2>
+		<div class="col-8">
+		    <p class="nomargin-bottom">El Menú proporciona los enlaces de navegación en forma de <strong class="medium">"dropdown" vertical</strong>, donde se presenta el logo del sitio en el lado izquiero y los enlaces de Acceder y Registrarse, en el derecho.</p>
+		    <p><code>ul id="navbar"</code></p>
+		</div>
+	    </div>
+	    
+	    <div class="fila  margin-bottom">	    
+		<div class="col-8">
+		    <code class="col-8 no-margin-left">
+	&lt;li>&lt;a href="escuela.html">Escuela&lt;/a>&lt;ul>
+	    &lt;li>&lt;a href="#">Historia&lt;/a>&lt;/li>
+	    &lt;li>&lt;a href="#">Admisión&lt;/a>&lt;/li>
+	    &lt;li>&lt;a href="#">Campus&lt;/a>&lt;/li>
+	    &lt;li>&lt;a href="#">Cuerpo Académico&lt;/a>&lt;/li>
+	    &lt;li>&lt;a href="#">Autoridades&lt;/a>&lt;/li>
+	    &lt;li>&lt;a href="#">Catolicidad&lt;/a>&lt;/li>
+	    &lt;li>&lt;a href="#">Biblioteca&lt;/a>&lt;/li>
+	    &lt;li>&lt;a href="#">Prensa&lt;/a>&lt;/li>&lt;/ul>
+	&lt;/li>
+		    </code>
+		</div>
+
+	    </div>
+	    
+	    <div class="fila">
+		<div class="col-4 margensup-col">
+			<div class="logo espaciado-2"><a>e[ad]</a></div>
+			<h6 class="no-margin">Escuela de Arquitectura y Diseño</h6>
+			<div class= "p-logo">Pontificia Universidad Católica de Valparaíso
+			</div>
+		</div>
+                <div class="col-12">		
+			    <ul id="navbar">	
+				<li><a href="escuela.html">Escuela</a><ul>
+					<li><a href="#">Historia</a></li>
+					<li><a href="#">Admisión</a></li>
+					<li><a href="#">Campus</a></li>
+					<li><a href="#">Cuerpo Académico</a></li>
+					<li><a href="#">Autoridades</a></li>
+					<li><a href="#">Catolicidad</a></li>
+					<li><a href="#">Biblioteca</a></li>
+					<li><a href="#">Prensa</a></li></ul>
+				</li>
+	
+				<li><a href="#">Carreras</a><ul>
+					<li><a href="#">Arquitectura</a></li>
+					<li><a href="#">Diseño</a></li></ul>
+				</li>
+		
+				<li><a href="#">Postgrado</a><ul>
+					<li><a href="#">Magister Náutico y Marítimo</a></li>
+					<li><a href="#">Magister Ciudad y Territorio</a></li></ul>
+				</li>
+		
+				<li><a href="#">Estudiantes</a><ul>
+					<li><a href="#">Cuerpo Coordinador</a></li>
+					<li><a href="#">Procesos Administrativos</a></li>
+					<li><a href="#">Calendario</a></li>
+					<li><a href="#">Exalumnos</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Movilidad Estudiantil</a></li>
+					<li><a href="#">Bolsa de Trabajo</a></li>
+					<li><a href="#">Asuntos Estudiantiles</a></li></ul>
+				</li>
+
+				<li><a href="#">Amereida</a><ul>
+					<li><a href="#">Biblioteca Constel</a></li>
+					<li><a href="#">Travesías</a></li>
+					<li><a href="#">Taller de Amereida</a></li>
+					<li><a href="#">Ciudad Abierta</a></li></ul>
+				</li>
+			
+				<li><a href="#">Mundo</a><ul>
+					<li><a href="#">Extensión</a></li>
+					<li><a href="#">Investigación</a></li>
+					<li><a href="#">Archivo Histórico José Vial Armstrong</a></li>
+					<li><a href="#">Ediciones e[ad]</a></li>
+					<li><a href="#">Wiki Casiopea</a></li></ul>
+				</li>
+
+			</ul>			
+			<p class="chico naranja margen-header espaciado"><strong class="regular"><a>Acceder</a> • <a>Registrarse</a> </strong></p>
+			
+		</div>
+	    </div>
+	
+	    
+	</div>    
+	    
+	<div class="pag inter-pag sombra-pag">
             <div class="fila">
-                <div class="mitad">
-	                <h3>Botones</h3>
-	                <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type="submit"]</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>mini</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
+                <div class="col-16">
+	                <h2 class="filete margin-bottom">Menú Acordeón</h2>
+		</div>
+		
+                <div class="col-8">
+	                <p class="nomargin-bottom">El sitio cuenta con un menú estilo acordeón en la barra lateral, lo que permite <strong class="medium">colapsar información</strong> sin que el largo de la barra destaque por sobre los demás elementos. Dos secciones se dejan fuera del menú debido a su relevancia: Taller de Amereida y Observación de la Semana.</p>
+			<p><code>div class="accordion vertical"</code></p>	
+		</div>
+	    </div>
+	    
+	    <div class="fila  margin-bottom">	    
+		<div class="col-16">
+		    <code class="col-16 no-margin-left">
+    &lt;section id="twitter">
+	&lt;h6 class="menu-vertical espaciado">&lt;a class="vertical-a" href="#twitter">&lt;strong class="icono margin-icono">/&lt;/strong>
+	&lt;strong class="medium">e[ad] en Twitter @eadpucv&lt;/strong>&lt;/a>&lt;/h6>
+	&lt;p class="chico margin-left">RT &lt;a class="medium">@rodrigosaave:&lt;/a>
+	Alumnos dibujan en tareas dada por Ricardo Lang en Día Abierto Ead &lt;a class="negrita">http://t.co/31ta0f38&lt;/a>.&lt;/p>
+	&lt;p class="chico margin-left">RT &lt;a class="medium">@rodrigosaave:&lt;/a>
+	Clase de Profesor de Diseño Alejandro Garretón en Día Abierto Ead &lt;a class="negrita">http://t.co/IF2Ob43S&lt;/a>.&lt;/p>
+	&lt;p class="chico margin-left">Día abierto Ead Expone Profesor Alejandro Garretón. <>(hace 3 días)&lt;/p>
+    &lt;/section>
+		    </code>
+		</div>
+
+	    </div>
+
+            <div class="fila">
+                <div class="col-16">
+			<div class="accordion vertical">			
+				 <section id="twitter">
+					<h6 class="menu-vertical espaciado"><a class="vertical-a" href="#twitter"><strong class="icono margin-icono">/</strong><strong class="medium">e[ad] en Twitter @eadpucv</strong></a></h6>
+					<p class="chico margin-left">RT <a class="medium">@rodrigosaave:</a> Alumnos dibujan en tareas dada por Ricardo Lang en Día Abierto Ead <a class="negrita">http://t.co/31ta0f38</a>.</p>
+					<p class="chico margin-left">RT <a class="medium">@rodrigosaave:</a> Clase de Profesor de Diseño Alejandro Garretón en Día Abierto Ead <a class="negrita">http://t.co/IF2Ob43S</a>.</p>
+					<p class="chico margin-left">Día abierto Ead Expone Profesor Alejandro Garretón. <>(hace 3 días)</p>
+				 </section>
+				 <section id="docencia">
+					<h6 class="menu-vertical espaciado"><a class="vertical-a" href="#docencia"><strong class="icono margin-icono">/</strong><strong class="medium">Información de Docencia</strong></a></h6>
+					<p class="chico datos nomargin-bottom margin-left"><a>Información Importante</a> </p>
+					<p class="fecha nomargin-bottom margin-left">31 de Agosto, 2012</p>
+					<p class="chico datos nomargin-bottom margin-top margin-left"><a>Último Periodo de Matrícula Extemporánea 2º semestre 2012</a></p>
+					<p class="fecha nomargin-bottom margin-left">28 de Agosto, 2012</p>
+				 </section>
+				<section id="ambito">
+					<h6 class="menu-vertical espaciado"><a class="vertical-a" href="#ambito"><strong class="icono margin-icono">/</strong><strong class="medium">Ámbito Académico</strong></a></h6>
+					<p class="chico datos nomargin-bottom margin-left"><a>Taller de Visitas de Obras 2012</a> </p>
+					<p class="fecha nomargin-bottom margin-left">29 de Julio, 2012</p>					
+					<p class="chico datos nomargin-bottom margin-top margin-left"><a> Taller de Primer Año de Diseño: <strong class="medium">“El Agua Expuesta”</strong></a></p>
+					<p class="fecha nomargin-bottom margin-left">28 de Agosto, 2012</p>				
+				</section>
+				<section id="alumnos">
+					<h6 class="menu-vertical espaciado"><a class="vertical-a" href="#alumnos"><strong class="icono margin-icono">/</strong><strong class="medium">De los Alumnos</a></strong></h6>
+					<p class="chico datos nomargin-bottom margin-left"><a><strong class="medium">“Narradores de Javé”</strong> en 3° sesión de cine</a> </p>
+					<p class="fecha nomargin-bottom margin-left">6 de Agosto, 2012</p>					
+					<p class="chico datos nomargin-bottom margin-top margin-left"><a>En Relación a las Prácticas Profesionales</a></p>
+					<p class="fecha nomargin-bottom margin-left">18 de Agosto, 2012</p>	
+				</section>
+
+			</div>
+		</div>			
+		
+	    </div>  
+	</div> 	
+	    
+	<div class="pag inter-pag sombra-pag">
+            <div class="fila">
+                <div class="col-16">
+	                <h2 class="filete margin-bottom">Botones</h2>
+		</div>	
+		<div class="col-8">	
+			<p>Para definir los botones de un sitio, se crea un <strong class="medium">botón base</strong>, en el cual se declaran las propiedades comunes, como tipografía, borde, sombra, etc. Luego, a partir de la base, <strong class="medium">se crean variaciones</strong> que cambian el aspecto de éste, como el tamaño y el color.</p>
 	                </p>
-	                <h3 class="filete">Elementos de Formulario</h3>
-                    <form class="vertical b10">
-                    <code>form class="vertical"</code>
-                    <label>Etiqueta del campo</label>
-                    <input class="b10" />
-                    <label>Otra etiqueta</label>
-                    <input class="b10" />
-                    <code class="margen-superior">input type="submit"  class="accion grande derecha"</code>
-                    <input type="submit"  class="accion grande derecha" value="Acción">
-                    </form>
-                </div>
-                <div class="mitad">
+		</div>		
+                <div class="col-16 margin-left">
                     <table class="w100">
                         <tr>
-                            <th class="w60">
-                                Elemento
-                            </th>
-                            <th class="w30">
-                                Código
-                            </th>
+                            <th class="w60">Elemento</th>
+                            <th class="w30">Código</th>
                         </tr>
                         <tr>
-                            <td>
-                                <a class="btn mini">botón</a>
-                            </td>
-                            <td>
-                                <code>btn mini</code>
-                            </td>
+                            <td><a class="btn mini">botón</a></td>
+                            <td><code>btn mini</code></td>
                         </tr>
                         <tr>
-                            <td>
-                                <a class="btn">botón</a>
-                            </td>
-                            <td>
-                                <code>btn</code>
-                            </td>
+                            <td><a class="btn">botón</a></td>
+                            <td><code>btn</code></td>
                         </tr>
                         <tr>
-                            <td>
-                                <a class="btn grande">botón</a>
-                            </td>
-                            <td>
-                                <code>btn grande</code>
-                            </td>
+                            <td><a class="btn grande">botón</a></td>
+			    <td><code>btn grande</code></td>
                         </tr>
                         <tr>
-                            <td>
-                                <a class="btn gigante">botón</a>
-                            </td>
-                            <td>
-                                <code>btn gigante</code>
-                            </td>
+                            <td><a class="btn gigante">botón</a></td>
+                            <td><code>btn gigante</code></td>
                         </tr>
                         <tr>
                             <td>
@@ -136,48 +252,146 @@
                     </table>
                 </div>
             </div>
-        </div>
-        <footer>
+	    </div>
+        </div>			
+	
+	<div class="pag inter-pag sombra-pag">			
             <div class="fila">
-                <div class="tres-cuartos">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="index.html">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="tipografia.html">Tipografía</a>
-                            </li>
-                            <li>
-                                <a href="grilla.html">Grilla</a>
-                            </li>
-                            <li>
-                                <a href="interaccion.html">Interacción</a>
-                            </li>
-                            <li>
-                                <a href="color.html">Color</a>
-                            </li>
-                            <li>
-                                <a href="versatilidad.html">Versatilidad</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <p class="margen-superior">
-                        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.es_CL"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png"></a> <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">e[ad] EGGL</span> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Taller de Investigaciones Gráficas .:TIG:.</span> se encuentra bajo una <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.es_CL">Licencia Creative Commons Atribución 3.0 Unported</a>.<br>
-                        Basada en una obra en <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hspencer/EGGL-ead" rel="dct:source">https://github.com/hspencer/EGGL-ead</a>.
-                    </p>
-                </div>
-                <div class="cuarto">
-                    <address>
-                        <strong>e[ad] Escuela de Arquitectura y Diseño</strong><br>
-                        Pontificia Universidad Católica de Valparaíso<br>
-                        Matta 12, Recreo<br>
-                        Viña del Mar<br>
-                        fono: +56322274401<br>
-                        fax: +56322274421
-                    </address>
-                </div>
+		<div class="col-16">
+	            <h2 class="filete">Elementos de Formulario</h2>
+		</div>
+		
+		<div class="col-8">
+                    <form class="vertical b10">
+                    <code>form class="vertical"</code>
+                    <label>Etiqueta del campo</label>
+                    <input class="b7" />
+                    <label>Otra etiqueta</label>
+                    <input class="b7" />
+                    <p><code class="no-margin-top">input type="submit"</code></p>
+                    </form>
+		</div>
             </div>
-        </footer>
+	</div>    
+		
+	<div class="pag inter-pag sombra-pag">
+            <div class="fila">
+                <div class="col-16">
+	                <h2 class="filete margin-bottom">Barras</h2>
+		</div>
+		
+                <div class="col-8">
+		    <h3 class="nomargin-bottom">Búsqueda</h3>
+	            <p class="nomargin-bottom">La barra de búsqueda está compuesta por dos partes: la caja en sí y el botón de "Buscar". Es una barra simple, con el ancho de 4 columnas.</p>
+		    <p><code>div class="searchbox"</code> <code>div class="searchbtn"</code></p>	
+		</div>
+	    </div>
+	    
+	    <div class="fila  margin-bottom">	    
+		<div class="col-8">
+		    <code class="col-8 no-margin-left">
+	&lt;div class="searchbox">
+	    &lt;input type="text" name="searchbox" id="searchbox">
+	&lt;/div>
+	&lt;div class="searchbtn">
+	    &lt;input name="search" type="button" value="Buscar">
+	    &lt;/div>
+	&lt;/div>
+		    </code>
+		</div>
+                <div class="col-8">
+			<div class="searchbox">
+				<input type="text" name="searchbox" id="searchbox">
+			</div>
+			<div class="searchbtn">
+				<input name="search" type="button" value="Buscar">
+			</div>
+			</div>	
+	    </div>
+	    
+	    <div class="fila">
+		
+                <div class="col-8">
+		    <h3 class="nomargin-bottom">Traducción</h3>
+	            <p class="nomargin-bottom">La barra para traducir el sitio es un widget de Google. Al igual que el de búsqueda, su ancho es de 4 columnas.</p>
+		    <p><code>div id="widget_google_translate"</code></p>	
+		</div>
+		
+                <div class="col-8">
+		    <div id="widget_google_translate">
+			<ul class="no-margin-left margin-bot-5">
+				<form class="margin-bot-5" action="http://translate.google.com/translate">
+					<input name="u" id="url" value="http://www.ead.pucv.cl/escuela/" type="hidden" />
+					<input name="sl" value="es" type="hidden" /><strong class="icono">></strong>Translate to:<br />
+					<select class="widget-trans" name="tl" style="width:auto"><option value="ar">Arabic</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en" selected  >English</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="de">German</option><option value="el">Greek</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="id">Indonesian</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="ko">Korean</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="no">Norwegian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sr">Serbian</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="es">Spanish</option><option value="sv">Swedish</option><option value="uk">Ukrainian</option><option value="vi">Vietnamese</option>
+					</select><br />
+					<input name="hl" value="en" type="hidden" />
+					<input name="ie" value="UTF-8" type="hidden" />
+				</form>
+			</ul>
+		    </div>   
+		</div>
+		
+		<div class="col-16">
+		    <code class="col-16 no-margin-left">
+    &lt;div id="widget_google_translate">
+	&lt;ul class="no-margin-left margin-bot-5">
+	    &lt;form class="margin-bot-5" action="http://translate.google.com/translate">
+		&lt;input name="u" id="url" value="http://www.ead.pucv.cl/escuela/" type="hidden" />
+		&lt;input name="sl" value="es" type="hidden" />&lt;strong class="icono">>&lt;/strong>Translate to:&lt;br />
+		    &lt;select class="widget-trans" name="tl" style="width:auto">&lt;option value="ar">Arabic&lt;/option>
+			&lt;option value="bg">Bulgarian&lt;/option>
+			&lt;option value="ca">Catalan&lt;/option>&lt;option value="zh-CN">Chinese (Simplified)&lt;/option>
+			&lt;option value="zh-TW">Chinese (Traditional)&lt;/option>
+			&lt;option value="hr">Croatian&lt;/option>&lt;option value="cs">Czech&lt;/option>
+			&lt;option value="da">Danish&lt;/option>&lt;option value="nl">Dutch&lt;/option>
+			&lt;option value="en" selected >English&lt;/option>&lt;option value="tl">Filipino&lt;/option>
+			&lt;option value="fi">Finnish&lt;/option>&lt;option value="fr">French&lt;/option>
+			&lt;option value="de">German&lt;/option>&lt;option value="el">Greek&lt;/option>
+			&lt;option value="iw">Hebrew&lt;/option>&lt;option value="hi">Hindi&lt;/option>
+			&lt;option value="id">Indonesian&lt;/option>&lt;option value="it">Italian&lt;/option>
+			&lt;option value="ja">Japanese&lt;/option>&lt;option value="ko">Korean&lt;/option>
+			&lt;option value="lv">Latvian&lt;/option>&lt;option value="lt">Lithuanian&lt;/option>
+			&lt;option value="no">Norwegian&lt;/option>&lt;option value="pl">Polish&lt;/option>
+			&lt;option value="pt">Portuguese&lt;/option>&lt;option value="ro">Romanian&lt;/option>
+			&lt;option value="ru">Russian&lt;/option>&lt;option value="sr">Serbian&lt;/option>
+			&lt;option value="sk">Slovak&lt;/option>&lt;option value="sl">Slovenian&lt;/option>
+			&lt;option value="es">Spanish&lt;/option>&lt;option value="sv">Swedish&lt;/option>
+			&lt;option value="uk">Ukrainian&lt;/option>&lt;option value="vi">Vietnamese&lt;/option>
+		    &lt;select>&lt;br />
+		&lt;input name="hl" value="en" type="hidden" />
+		&lt;input name="ie" value="UTF-8" type="hidden" />
+	    &lt;/form>
+	&lt;/ul>
+	&lt;/div> 
+		    </code>		
+	    
+	    </div>
+		
+	    </div>
+	
+	</div> 
+
+	<footer class="pie">
+		
+		<nav class="nomargin-bottom">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="tipografia.html">Tipografía</a></li>
+				<li><a href="grilla.html">Grilla</a></li>
+				<li><a href="interaccion.html">Interacción</a></li>
+				<li><a href="color.html">Color</a></li>
+							
+				<li><a href="versatilidad.html">Versatilidad</a></li>
+			</ul>
+		</nav>
+		
+		<div class="pag pagfooter">
+		<p class="chico"><strong class="azul">e[ad]</strong> • Escuela de Arquitectura y Diseño • Pontificia Universidad Católica de Valparaíso
+		<br>
+		<strong class="medium">Contacto </strong>• Matta 12, Recreo, Viña del Mar, Chile • <strong class="medium">Cód. Postal:</strong> 2580129, Casilla 4170 V2 Valparaíso • <strong class="medium">Teléfono</strong> +56 32 2274401 • <strong class="medium">Fax</strong> +56 32 2274421</p>
+		</div>
+	</footer>
+
     </body>
 </html>
