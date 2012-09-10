@@ -11,19 +11,21 @@
 </head>
 
 <body lang="ES_es">
-	<div class="pag">
+	<div class="pag inter-pag sombra-pag">	
 		<header>
 			<div class="fila">
-				<div class="mitad"><h1 class="rojo fina gigante">EGGL: e[ad] Global Graphic Language</h1></div>
-				<div class="mitad">
+				<div class="col-8"><h1 class="logo espaciado">Diseño Visual <strong class="medium">Sitio e[ad]</strong></h1></div>
+				<div class="col-8">
 					<p class="grande fino">Documentación del lenguaje gráfico para todos los sitios y servicios de la e[ad] Escuela de Arquitectura y Diseño de la Pontificia Universidad Católica de Valparaíso</p>
-					<p>Proyecto de código libre disponible en <a class="btn" href="https://github.com/hspencer/EGGL-ead" title="EGGL en Github">Github</a></p>
+					<h6 class="margin-bot-10"><strong class="medium">Proyecto de código libre disponible en </strong></h6>
+					<a class="btn accion" href="https://github.com/DanielaPardoT/EGGL-ead/tree/patch-1" title="EGGL en Github">Github</a>
 				</div>
 			</div>
 		</header>
+		
 		<nav class="margen-inferior">
 			<ul>
-				<li><a href="index.html">¶</a></li>
+				<li><a href="index.html">Inicio</a></li>
 				<li><a href="tipografia.html">Tipografía</a></li>
 				<li><a href="grilla.html">Grilla</a></li>
 				<li><a href="interaccion.html">Interacción</a></li>
@@ -34,7 +36,7 @@
 		</nav>
 		
 		<h2 class="grande rojo">Grilla</h2>
-		<p>La estructura para definir la geometría de la pantalla se basa en un sistema de filas y columnas, con un ancho máximo de 24 columnas en total, para dar un ancho de 1136px para la página contenedora. La columna tiene un ancho de <strong></p>
+		<p>La Grilla se divide en <strong class="medium">16 columnas</strong> de 43px cada una y una intercolumna de 18,13px que resulta en un ancho de 960px. El principal objetivo que debe cumplir la estructura, es la división en <strong class="medium">tres secciones</strong>, de manera que una de ellas fuera de menor ancho para ser utilizada como una barra lateral y con este número de columnas es posible además de otras combinaciones.</p>
 		<div class="fila margen-inferior">
 			<div class="col-1 ver"><p>01</p></div>
 			<div class="col-1 ver"><p>02</p></div>
@@ -51,15 +53,8 @@
 			<div class="col-1 ver"><p>13</p></div>
 			<div class="col-1 ver"><p>14</p></div>
 			<div class="col-1 ver"><p>15</p></div>
-			<div class="col-1 ver"><p>16</p></div>
-			<div class="col-1 ver"><p>17</p></div>
-			<div class="col-1 ver"><p>18</p></div>
-			<div class="col-1 ver"><p>19</p></div>
-			<div class="col-1 ver"><p>20</p></div>
-			<div class="col-1 ver"><p>21</p></div>
-			<div class="col-1 ver"><p>22</p></div>
-			<div class="col-1 ver"><p>23</p></div>
-			<div class="col-1 ver"><p>24</p></div>
+			<div class="col-1 ver"><p>16</p></div>			
+			
 		</div>
 		<div class="fila margen-inferior">
 			<div class="col-2 ver"><p>01 <code>col-2</code></p></div>
@@ -70,10 +65,6 @@
 			<div class="col-2 ver"><p>06 <code>col-2</code></p></div>
 			<div class="col-2 ver"><p>07 <code>col-2</code></p></div>
 			<div class="col-2 ver"><p>08 <code>col-2</code></p></div>
-			<div class="col-2 ver"><p>09 <code>col-2</code></p></div>
-			<div class="col-2 ver"><p>10 <code>col-2</code></p></div>
-			<div class="col-2 ver"><p>11 <code>col-2</code></p></div>
-			<div class="col-2 ver"><p>12 <code>col-2</code></p></div>
 		</div>
 
 		<div class="fila margen-inferior">
@@ -81,55 +72,70 @@
 			<div class="col-4 ver"><p>02 <code>col-4</code></p></div>
 			<div class="col-4 ver"><p>03 <code>col-4</code></p></div>
 			<div class="col-4 ver"><p>04 <code>col-4</code></p></div>
-			<div class="col-4 ver"><p>05 <code>col-4</code></p></div>
-			<div class="col-4 ver"><p>06 <code>col-4</code></p></div>
+		</div>
+		
+		
+		<div class="fila margen-inferior">
+			<div class="col-3 ver"><p>01 <code>col-3</code></p></div>
+			<div class="col-3 ver"><p>02 <code>col-3</code></p></div>
+			<div class="col-5 ver"><p>03 <code>col-5</code></p></div>
+			<div class="col-5 ver"><p>03 <code>col-5</code></p></div>			
+		</div>
+		
+		<div class="fila margen-inferior">
+			<div class="col-3 ver"><p>01 <code>col-3</code></p></div>
+			<div class="col-6 ver"><p>02 <code>col-6</code></p></div>
+			<div class="col-7 ver"><p>03 <code>col-7</code></p></div>
+		</div>
+		
+		<div class="fila margen-inferior">
+			<div class="col-9 ver"><p>01 <code>col-9</code></p></div>
+			<div class="col-7 ver"><p>02 <code>col-7</code></p></div>
 		</div>
 		
 		<div class="fila margen-inferior">
 			<div class="col-6 ver"><p>01 <code>col-6</code></p></div>
-			<div class="col-6 ver"><p>02 <code>col-6</code></p></div>
-			<div class="col-6 ver"><p>03 <code>col-6</code></p></div>
-			<div class="col-6 ver"><p>04 <code>col-6</code></p></div>
+			<div class="col-10 ver"><p>02 <code>col-10</code></p></div>
 		</div>
 		
 		<div class="fila margen-inferior">
-			<div class="col-7 ver"><p>01 <code>col-7</code></p></div>
-			<div class="col-3 ver"><p>02 <code>col-3</code></p></div>
-			<div class="col-2 ver"><p>03 <code>col-2</code></p></div>
-			<div class="col-2 ver"><p>04 <code>col-2</code></p></div>
-			<div class="col-3 ver"><p>05 <code>col-3</code></p></div>
-			<div class="col-7 ver"><p>06 <code>col-7</code></p></div>
+			<div class="col-5 ver"><p>01 <code>col-5</code></p></div>
+			<div class="col-11 ver"><p>02 <code>col-11</code></p></div>
 		</div>
 		
 		<div class="fila margen-inferior">
-			<div class="col-8 ver"><p>01 <code>col-8</code></p></div>
-			<div class="col-8 ver"><p>02 <code>col-8</code></p></div>
-			<div class="col-8 ver"><p>03 <code>col-8</code></p></div>
-		</div>
-		
-		<div class="fila margen-inferior">
-			<div class="col-10 ver"><p>01 <code>col-10</code></p></div>
-			<div class="col-4 ver"><p>02 <code>col-4</code></p></div>
-			<div class="col-10 ver"><p>03 <code>col-10</code></p></div>
-		</div>
-		
-		<div class="fila margen-inferior">
-			<div class="col-11 ver"><p>01 <code>col-11</code></p></div>
-			<div class="col-2 ver"><p>02 <code>col-2</code></p></div>
-			<div class="col-11 ver"><p>03 <code>col-11</code></p></div>
-		</div>
-		
-		<div class="fila margen-inferior">
-			<div class="col-12 ver"><p>01 <code>col-12</code></p></div>
+			<div class="col-4 ver"><p>01 <code>col-4</code></p></div>
 			<div class="col-12 ver"><p>02 <code>col-12</code></p></div>
 		</div>
 		
 		<div class="fila margen-inferior">
-			<div class="col-24 ver"><p>01 <code>col-24</code></p></div>
+			<div class="col-3 ver"><p>01 <code>col-3</code></p></div>
+			<div class="col-13 ver"><p>02 <code>col-13</code></p></div>
 		</div>
 		
+		<div class="fila margen-inferior">
+			<div class="col-2 ver"><p>01 <code>col-2</code></p></div>
+			<div class="col-14 ver"><p>02 <code>col-14</code></p></div>
+		</div>
 		
-		<h3 class="filete">Bloques</h3>
+		<div class="fila margen-inferior">
+			<div class="col-1 ver"><p>01</p></div>
+			<div class="col-15 ver"><p>02 <code>col-15</code></p></div>
+		</div>			
+		
+		<div class="fila margen-inferior">
+			<div class="col-16 ver"><p>01 <code>col-16</code></p></div>
+		</div>
+		
+		<div class="fila margen-inferior">
+			<div class="col-4 ver ver-opaco"><p>01 <code>col-4</code></p></div>
+			<div class="col-6 ver ver-opaco"><p>02 <code>col-6</code></p></div>
+			<div class="col-6 ver ver-opaco"><p>03 <code>col-6</code></p></div>
+		</div>
+		
+	</div>
+	<div class="pag inter-pag sombra-pag no.pad">	
+		<h2 class="filete margin-bottom">Bloques</h2>
 		<div class="fila">
 			<div class="bloque1 ver"><p>01</p></div>
 			<div class="bloque1 ver"><p>02</p></div>
@@ -147,14 +153,6 @@
 			<div class="bloque1 ver"><p>14</p></div>
 			<div class="bloque1 ver"><p>15</p></div>
 			<div class="bloque1 ver"><p>16</p></div>
-			<div class="bloque1 ver"><p>17</p></div>
-			<div class="bloque1 ver"><p>18</p></div>
-			<div class="bloque1 ver"><p>19</p></div>
-			<div class="bloque1 ver"><p>20</p></div>
-			<div class="bloque1 ver"><p>21</p></div>
-			<div class="bloque1 ver"><p>22</p></div>
-			<div class="bloque1 ver"><p>23</p></div>
-			<div class="bloque1 ver"><p>24</p></div>
 		</div>
 		
 		<div class="fila">
@@ -166,10 +164,7 @@
 			<div class="bloque2 ver"><p>06 <code>bloque2</code></p></div>
 			<div class="bloque2 ver"><p>07 <code>bloque2</code></p></div>
 			<div class="bloque2 ver"><p>08 <code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p>09 <code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p>10 <code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p>11 <code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p>12 <code>bloque2</code></p></div>
+
 		</div>
 
 		<div class="fila">
@@ -177,66 +172,57 @@
 			<div class="bloque4 ver"><p>02 <code>bloque4</code></p></div>
 			<div class="bloque4 ver"><p>03 <code>bloque4</code></p></div>
 			<div class="bloque4 ver"><p>04 <code>bloque4</code></p></div>
-			<div class="bloque4 ver"><p>05 <code>bloque4</code></p></div>
-			<div class="bloque4 ver"><p>06 <code>bloque4</code></p></div>
-		</div>
-		
-		<div class="fila">
-			<div class="bloque6 ver"><p>01 <code>bloque6</code></p></div>
-			<div class="bloque6 ver"><p>02 <code>bloque6</code></p></div>
-			<div class="bloque6 ver"><p>03 <code>bloque6</code></p></div>
-			<div class="bloque6 ver"><p>04 <code>bloque6</code></p></div>
-		</div>
-		
-		<div class="fila">
-			<div class="bloque7 ver"><p>01 <code>bloque7</code></p></div>
-			<div class="bloque3 ver"><p>02 <code>bloque3</code></p></div>
-			<div class="bloque2 ver"><p>03 <code>bloque2</code></p></div>
-			<div class="bloque2 ver"><p>04 <code>bloque2</code></p></div>
-			<div class="bloque3 ver"><p>05 <code>bloque3</code></p></div>
-			<div class="bloque7 ver"><p>06 <code>bloque7</code></p></div>
 		</div>
 		
 		<div class="fila">
 			<div class="bloque8 ver"><p>01 <code>bloque8</code></p></div>
 			<div class="bloque8 ver"><p>02 <code>bloque8</code></p></div>
-			<div class="bloque8 ver"><p>03 <code>bloque8</code></p></div>
 		</div>
 		
-		<div class="fila margen-inferior-negativo">
-			<div class="bloque10 ver"><p>01 <code>bloque10</code></p></div>
-			<div class="bloque4 ver"><p>02 <code>bloque4</code></p></div>
-			<div class="bloque10 ver"><p>03 <code>bloque10</code></p></div>
+		<div class="fila">
+			<div class="bloque7 ver"><p>01 <code>bloque7</code></p></div>
+			<div class="bloque9 ver"><p>02 <code>bloque9</code></p></div>
 		</div>
+		
+		<div class="fila">
+			<div class="bloque10 ver"><p>01 <code>bloque10</code></p></div>
+			<div class="bloque3 ver"><p>02 <code>bloque3</code></p></div>
+			<div class="bloque3 ver"><p>03 <code>bloque3</code></p></div>
+		</div>
+		
+		<div class="fila">
+			<div class="bloque11 ver"><p>01 <code>bloque11</code></p></div>
+			<div class="bloque5 ver"><p>02 <code>bloque5</code></p></div>
+		</div>
+		
+		<div class="fila">
+			<div class="bloque12 ver"><p>01 <code>bloque12</code></p></div>
+			<div class="bloque4 ver"><p>02 <code>bloque4</code></p></div>
+		</div>		
+		
 	</div>
-	<footer>
-			<div class="fila">
-				<div class="tres-cuartos">
-					<nav>
-						<ul>
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="tipografia.html">Tipografía</a></li>
-							<li><a href="grilla.html">Grilla</a></li>
-							<li><a href="interaccion.html">Interacción</a></li>
-							<li><a href="color.html">Color</a></li>
+
+	<footer class="pie">
+		
+		<nav class="nomargin-bottom">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="tipografia.html">Tipografía</a></li>
+				<li><a href="grilla.html">Grilla</a></li>
+				<li><a href="interaccion.html">Interacción</a></li>
+				<li><a href="color.html">Color</a></li>
 							
-							<li><a href="versatilidad.html">Versatilidad</a></li>
-						</ul>
-					</nav>
-					<p class="margen-superior"> <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.es_CL"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">e[ad] EGGL</span> por <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Taller de Investigaciones Gráficas .:TIG:.</span> se encuentra bajo una <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.es_CL">Licencia Creative Commons Atribución 3.0 Unported</a>.<br />Basada en una obra en <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hspencer/EGGL-ead" rel="dct:source">https://github.com/hspencer/EGGL-ead</a>.</p>
-				</div>
-				<div class="cuarto">
-					<address>
-					<strong>e[ad] Escuela de Arquitectura y Diseño</strong><br />
-					Pontificia Universidad Católica de Valparaíso<br />
-					Matta 12, Recreo<br />
-					Viña del Mar<br />
-					fono: +56322274401<br />
-					fax: +56322274421
-					</address>
-				</div>
-			</div>
-		</footer>
+				<li><a href="versatilidad.html">Versatilidad</a></li>
+			</ul>
+		</nav>
+		
+		<div class="pag pagfooter">
+		<p class="chico"><strong class="azul">e[ad]</strong> • Escuela de Arquitectura y Diseño • Pontificia Universidad Católica de Valparaíso
+		<br>
+		<strong class="medium">Contacto </strong>• Matta 12, Recreo, Viña del Mar, Chile • <strong class="medium">Cód. Postal:</strong> 2580129, Casilla 4170 V2 Valparaíso • <strong class="medium">Teléfono</strong> +56 32 2274401 • <strong class="medium">Fax</strong> +56 32 2274421</p>
+		</div>
+	</footer>
+
 </body>
 
 </html>
